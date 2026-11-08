@@ -37,6 +37,7 @@ button{font:inherit;color:inherit}
 .ens h4{margin:0 0 .35rem;font-size:.98rem;line-height:1.3;font-weight:700;letter-spacing:-.15px}
 .ens h4 button{all:unset;cursor:pointer}
 .ens .nom{display:inline-block;margin:0 .45rem .15rem 0;padding:.02rem .5rem;border-radius:7px;background:var(--btn);color:#fff;font-size:.8rem;letter-spacing:.2px;vertical-align:1px}
+.ens .nom.cod{background:#fff;color:var(--ink);border:1px solid var(--ink);padding:0 .45rem}
 .crit{margin:.3rem 0;padding-left:1.1rem}.crit li{margin:.25rem 0}.crit li.enc{list-style:none;margin:.7rem 0 .2rem -1.1rem;font-weight:600;font-size:.8rem;color:var(--mut)}
 .ens h4 button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .ens .ind{margin:.25rem 0;font-size:.86rem;color:#333}
@@ -107,3 +108,34 @@ button{font:inherit;color:inherit}
   .hoja .dos{grid-template-columns:1fr}
   .leaflet-top.leaflet-right{top:56px}
 }
+
+.diseno{display:grid;grid-template-columns:auto 1fr;gap:.2rem .8rem;margin:.4rem 0;font-size:.82rem}.diseno dt{color:var(--mut)}.diseno dd{margin:0}
+.resumen{font-size:.82rem;margin:.4rem 0}.brazos{margin:.2rem 0;padding-left:1.1rem;font-size:.82rem}.brazos li{margin:.3rem 0}.mut{color:var(--mut);font-size:.78rem}
+details h5{margin:.6rem 0 .1rem;font-size:.8rem}
+
+/* Vista «Promotores» (red) */
+.leaflet-top.leaflet-right{top:64px}
+.vista{position:fixed;z-index:1000;top:16px;right:16px;display:flex;background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:4px;gap:2px}
+.vista button{border:none;background:none;padding:7px 12px;border-radius:10px;cursor:pointer;font-size:.88rem;font-weight:600}
+.vista button.on{background:var(--btn);color:#fff}
+.vista small{font-weight:500;font-size:.62rem;opacity:.7;border:1px solid currentColor;border-radius:6px;padding:0 .25rem;margin-left:.15rem}
+.red{position:fixed;inset:0;background:#fff;z-index:500;touch-action:none}
+.red svg{display:block;cursor:grab}
+.r-enl line{stroke:#9a9a9a;stroke-opacity:.55;stroke-width:1}
+.r-n{cursor:pointer}
+.r-n.e circle{fill:var(--ink);stroke:#fff;stroke-width:1}
+.r-n.p circle,.r-n.p rect{fill:#fff;stroke:var(--ink);stroke-width:1.6}
+.r-n.p.t-cooperativo circle{fill:#cfcfcf}
+.r-n.p.t-academico rect{fill:#fff}
+.r-n.p:hover circle,.r-n.p:hover rect,.r-n.abierto circle,.r-n.abierto rect{stroke-width:3.5}
+.r-n.hv,.r-enl line.hv{opacity:.12}
+.r-n.off{opacity:.14}.r-enl line.off{opacity:.08}
+.r-n.off.e circle{fill:#999}
+.r-txt text{font-size:11px;font-weight:600;fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+.r-txt text.peq{display:none}.r-txt text.peq.ver{display:block}
+.r-txt text.off{opacity:.2}
+.r-ley{position:absolute;left:16px;right:16px;bottom:calc(var(--barra) + 18px);display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.78rem;color:var(--mut);pointer-events:none}
+.r-ley span{display:inline-flex;align-items:center;gap:5px}.r-ley em{flex-basis:100%;font-style:normal}
+.r-ley .c{display:inline-block;width:11px;height:11px;border:1.6px solid var(--ink);border-radius:50%;background:#fff}
+.r-ley .c.coop{background:#cfcfcf}.r-ley .c.aca{border-radius:3px}.r-ley .c.ens{background:var(--ink);width:7px;height:7px;border-width:0}
+@media (max-width:560px){.marca h1{font-size:15px}.vista button{padding:6px 9px;font-size:.8rem}}

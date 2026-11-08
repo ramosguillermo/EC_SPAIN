@@ -80,7 +80,8 @@
   }
   function hayFiltro() { return !!(estado.q.trim() || estado.enf || estado.fase || estado.ccaa || estado.prov || estado.ens); }
 
-  var res = { ensayos: 0, hospitales: 0 };
+  var res = { ensayos: 0, hospitales: 0, vistos: {} };
+  var vista = "mapa", prom = null;
   function calcular() {
     var okE = {}, vistos = {}, nh = 0;
     T.forEach(function (e) { okE[e.identificador] = coincide(e); });
@@ -93,7 +94,7 @@
     Object.keys(S).forEach(function (k) {
       S[k].n = S[k].hs.reduce(function (a, h) { return a + h.ok.length; }, 0);
     });
-    res = { ensayos: Object.keys(vistos).length, hospitales: nh };
+    res = { ensayos: Object.keys(vistos).length, hospitales: nh, vistos: vistos };
   }
 
   // --- mapa -----------------------------------------------------------------
@@ -167,7 +168,14 @@
     var edades = [["ninos", "niños"], ["adolescentes", "adolescentes"], ["adultos", "adultos"], ["ancianos", "mayores"]]
       .filter(function (a) { return String(e[a[0]]) === "1"; }).map(function (a) { return a[1]; });
     if (edades.length) sec("Edades incluidas", el("p", null, edades.join(", ")));
-    if (e.promotor) sec("Promotor", el("p", null, e.promotor));
+    if (e.promotor) {
+      sec("Promotor", el("p", null, e.promotor));
+      if (vista !== "red") {
+        var vp = el("button", "btn claro", "Ver sus ensayos en la red de promotores"); vp.type = "button";
+        vp.addEventListener("click", function () { prom = e.promotor_c; estado.exp = e.identificador; cambiarVista("red"); });
+        d.appendChild(vp);
+      }
+    }
     if (e.protocolo) sec("Código de protocolo", el("p", null, e.protocolo));
     var ul = el("ul");
     e.centros.forEach(function (c) {
@@ -181,8 +189,38 @@
       ul.appendChild(li);
     });
     sec("Centros abiertos (" + e.centros.length + ")", ul);
+    if (e.diseno) {
+      var ds = e.diseno, el2 = e.elegibilidad || {}, f = [];
+      [["Tipo", ds.tipo], ["Fase", ds.fases], ["Asignación", ds.asignacion], ["Modelo", ds.modelo], ["Enmascaramiento", ds.enmascaramiento],
+       ["Finalidad", ds.proposito], ["Pacientes previstos", ds.n], ["Sexo", el2.sexo], ["Edad mínima", el2.edad_min], ["Edad máxima", el2.edad_max]]
+        .forEach(function (x) { if (x[1]) f.push(x); });
+      var dd = el("details"); dd.open = true; dd.appendChild(el("summary", null, "Diseño del ensayo"));
+      if (e.resumen) dd.appendChild(el("p", "resumen", e.resumen));
+      var dl = el("dl", "diseno");
+      f.forEach(function (x) { dl.appendChild(el("dt", null, x[0])); dl.appendChild(el("dd", null, String(x[1]))); });
+      dd.appendChild(dl);
+      if ((e.brazos || []).length) {
+        dd.appendChild(el("h5", null, "Brazos de tratamiento"));
+        var ub = el("ul", "brazos");
+        e.brazos.forEach(function (z) {
+          var li = el("li"); li.appendChild(el("strong", null, z.n + (z.t ? " (" + z.t + ")" : "")));
+          if (z.i && z.i.length) li.appendChild(el("div", "mut", z.i.join("; ")));
+          if (z.d) li.appendChild(el("div", null, z.d));
+          ub.appendChild(li);
+        });
+        dd.appendChild(ub);
+      }
+      if ((e.objetivos || []).length) {
+        dd.appendChild(el("h5", null, "Objetivo principal"));
+        var uo = el("ul", "brazos");
+        e.objetivos.forEach(function (o) { uo.appendChild(el("li", null, o.m + (o.p ? " — " + o.p : ""))); });
+        dd.appendChild(uo);
+        if (e.n_secundarios) dd.appendChild(el("p", "mut", "Más " + e.n_secundarios + " objetivos secundarios."));
+      }
+      d.appendChild(dd);
+    }
     var cr = e.criterios || { inc: [], exc: [] };
-    if (cr.fuente === "CTIS" && (cr.inc.length || cr.exc.length)) d.appendChild(el("p", "aviso", "El REec no publica los criterios de este ensayo; se muestran los criterios principales del registro europeo (CTIS)."));
+    if (cr.fuente && cr.fuente !== "REec" && (cr.inc.length || cr.exc.length)) d.appendChild(el("p", "aviso", "El REec no publica los criterios de este ensayo; se muestran los de " + (cr.fuente === "CTIS" ? "el registro europeo (CTIS), que son los criterios principales." : "ClinicalTrials.gov (registro estadounidense del mismo estudio, " + (e.nct || "") + ").")));
     [["Criterios de inclusión", cr.inc], ["Criterios de exclusión", cr.exc]].forEach(function (x) {
       if (!x[1].length) return;
       var n = x[1].filter(function (l) { return l.indexOf("§ ") !== 0; }).length;
@@ -213,7 +251,7 @@
     var abierta = estado.exp === e.identificador;
     var art = el("article", "ens" + (abierta ? " sel" : ""));
     var t = el("h4"), b = el("button");
-    if (e.nombre) b.appendChild(el("span", "nom", e.nombre));
+    if (e.nombre) b.appendChild(el("span", e.nombre_tipo === "protocolo" ? "nom cod" : "nom", e.nombre));
     b.appendChild(document.createTextNode(corto(tituloEnsayo(e), e.nombre ? 130 : 150)));
     b.type = "button"; b.setAttribute("aria-expanded", abierta ? "true" : "false");
     b.addEventListener("click", function () {
@@ -227,7 +265,31 @@
     if (abierta) art.appendChild(ficha(e, h));
     return art;
   }
+  function renderPanelProm() {
+    var p = $("#panel"), cuerpo = $("#pcuerpo"); cuerpo.textContent = "";
+    var lista = T.filter(function (e) { return e.promotor_c === prom; });
+    if (!lista.length) { p.hidden = true; return; }
+    p.hidden = false;
+    var ok = lista.filter(function (e) { return res.vistos[e.identificador]; });
+    var otros = lista.filter(function (e) { return !res.vistos[e.identificador]; });
+    var tipo = { industria: "Industria farmacéutica", cooperativo: "Grupo cooperativo", academico: "Hospital, universidad o institución académica" }[lista[0].promotor_t] || "";
+    var nombres = {}; lista.forEach(function (e) { if (e.promotor) nombres[e.promotor] = 1; });
+    $("#ptit").textContent = prom;
+    $("#psub").textContent = tipo + " · " + lista.length + " ensayo(s)";
+    var nn = Object.keys(nombres);
+    if (nn.length > 1 || (nn[0] && nn[0] !== prom)) cuerpo.appendChild(el("p", "dir", "Figura en el REec como: " + nn.join("; ")));
+    var filtro = hayFiltro();
+    cuerpo.appendChild(el("p", "cuenta", filtro ? ok.length + " de " + lista.length + " ensayos coinciden con tu búsqueda" : lista.length + " ensayo(s) abierto(s) en España"));
+    if (ok.length) { var l = el("div", "lista"); ok.forEach(function (e) { l.appendChild(tarjeta(e, null)); }); cuerpo.appendChild(l); }
+    if (otros.length) {
+      var dt = el("details", "otros"); dt.open = !ok.length;
+      dt.appendChild(el("summary", null, (ok.length ? "Otros " : "") + otros.length + " ensayo(s) de este promotor que no coinciden"));
+      var l2 = el("div", "lista"); otros.forEach(function (e) { l2.appendChild(tarjeta(e, null)); }); dt.appendChild(l2);
+      cuerpo.appendChild(dt);
+    }
+  }
   function renderPanel() {
+    if (vista === "red") { if (!prom) $("#panel").hidden = true; else renderPanelProm(); return; }
     var p = $("#panel"), s = S[estado.sitio];
     if (!s) { p.hidden = true; return; }
     p.hidden = false;
@@ -261,10 +323,14 @@
     pintarMapa(false);
     var s = S[k]; map.fitBounds(L.latLngBounds([[s.lat, s.lon]]), padOpts(Math.max(map.getZoom(), 10)));
   }
-  function cerrarPanel() { estado.sitio = null; estado.exp = null; $("#panel").hidden = true; pintarMapa(false); }
+  function cerrarPanel() {
+    estado.sitio = null; estado.exp = null; $("#panel").hidden = true;
+    if (vista === "red") { prom = null; if (window.EC && EC.red) EC.red.actualizar(); } else pintarMapa(false);
+  }
 
   // --- enfocar un ensayo (resalta sus centros en el mapa) ---------------------
   function enfocar(id) {
+    if (vista === "red") cambiarVista("mapa", true);
     estado.ens = id; estado.q = ""; $("#q").value = ""; estado.sitio = null; estado.exp = null;
     $("#panel").hidden = true; cerrarHojas(); render(true);
   }
@@ -297,11 +363,16 @@
     var foco = estado.ens ? T.filter(function (e) { return e.identificador === estado.ens; })[0] : null;
     $("#foco").hidden = !foco;
     if (foco) $("#foco-t").textContent = (foco.nombre ? foco.nombre + " · " : "") + corto(tituloEnsayo(foco), 90);
+    if (vista === "red") {
+      var pm = {}; T.forEach(function (e) { if (res.vistos[e.identificador]) pm[e.promotor_c] = 1; });
+      $("#estado").textContent = res.ensayos + " ensayo(s) · " + Object.keys(pm).length + " promotor(es)" + (hayFiltro() ? " resaltados en la red" : " con ensayos abiertos en España");
+    } else
     $("#estado").textContent = res.ensayos + " ensayo(s) · " + res.hospitales + " centro(s)" + (hayFiltro() ? " resaltados en el mapa" : " abiertos en España");
     var nf = nFiltros(), b = $("#nfil"); b.hidden = !nf; b.textContent = nf;
     if (estado.sitio && !(S[estado.sitio])) estado.sitio = null;
     renderPanel();
-    pintarMapa(!!ajustar);
+    if (vista === "red") { if (window.EC && EC.red) EC.red.actualizar(); }
+    else pintarMapa(!!ajustar);
   }
 
   // --- filtros ------------------------------------------------------------------
@@ -379,6 +450,24 @@
     else if (!$("#panel").hidden) cerrarPanel();
   });
   map.on("click", function () { cerrarHojas(); });
+
+  function cambiarVista(v, sinRender) {
+    if (v === vista) return;
+    vista = v;
+    $("#v-mapa").classList.toggle("on", v === "mapa"); $("#v-red").classList.toggle("on", v === "red");
+    $("#red").hidden = v !== "red"; $("#mapa").style.visibility = v === "red" ? "hidden" : "";
+    $("#panel").hidden = true; cerrarHojas();
+    if (v === "red") { if (window.EC && EC.red) EC.red.mostrar(); }
+    else { prom = null; setTimeout(function () { map.invalidateSize(); }, 0); }
+    if (!sinRender) render(v !== "red");
+  }
+  $("#v-mapa").addEventListener("click", function () { cambiarVista("mapa"); });
+  $("#v-red").addEventListener("click", function () { cambiarVista("red"); });
+  window.EC = {
+    T: T, estado: function () { return estado; }, vistos: function () { return res.vistos; }, hayFiltro: hayFiltro,
+    abrirPromotor: function (c, ensayo) { prom = c; estado.exp = ensayo || null; renderPanelProm(); $("#pcuerpo").scrollTop = 0; cerrarHojas(); },
+    promotorAbierto: function () { return prom; }, cerrarPanel: cerrarPanel
+  };
 
   $("#fecha").textContent = D.meta.generado ? D.meta.generado.split("-").reverse().join("/") : "—";
   render(true);
