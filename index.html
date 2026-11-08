@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ensayos clínicos de hematología abiertos en España</title>
+<meta name="description" content="Mapa de los ensayos clínicos de hematología que están reclutando pacientes en España. Datos del Registro Español de Estudios Clínicos (REec).">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="mapa" class="mapa" role="region" aria-label="Mapa de centros"></div>
+
+<header class="marca">
+  <h1>Ensayos de hematología</h1>
+  <button id="btn-info" class="icono" type="button" aria-label="Información y fuentes">i</button>
+</header>
+
+<aside id="panel" class="panel" hidden aria-label="Ensayos del centro">
+  <header class="ph">
+    <div>
+      <h2 id="ptit"></h2>
+      <p id="psub"></p>
+    </div>
+    <button id="pcerrar" class="icono" type="button" aria-label="Cerrar panel">×</button>
+  </header>
+  <div id="pcuerpo" class="pcuerpo"></div>
+</aside>
+
+<section id="filtros" class="hoja" hidden aria-label="Filtros">
+  <label>Enfermedad (clasificación OMS)<select id="f-enf"><option value="">Todas</option></select></label>
+  <div class="dos">
+    <label>Comunidad autónoma<select id="f-ccaa"><option value="">Todas</option></select></label>
+    <label>Provincia<select id="f-prov"><option value="">Todas</option></select></label>
+  </div>
+  <label>Fase<select id="f-fase"><option value="">Todas</option></select></label>
+  <label class="chk"><input type="checkbox" id="f-seg"> Incluir estudios de seguimiento o extensión (solo para quienes ya participaron en un estudio previo)</label>
+  <p class="nota">La enfermedad se asigna a partir del título y la indicación del REec; el registro a veces solo indica el área general. Confirma siempre los criterios de inclusión con tu médico.</p>
+  <button id="limpiar" class="sec" type="button">Limpiar filtros</button>
+</section>
+
+<div id="barra" class="barra">
+  <div id="foco" class="foco" hidden><span id="foco-t"></span><button id="foco-x" type="button" aria-label="Quitar ensayo seleccionado">×</button></div>
+  <div id="sug" class="sug" hidden role="listbox" aria-label="Ensayos que coinciden"></div>
+  <div class="fila">
+    <input id="q" type="search" placeholder="Enfermedad, medicamento, hospital, nº de ensayo…" aria-label="Buscar" autocomplete="off">
+    <button id="btn-filtros" class="sec" type="button" aria-expanded="false" aria-controls="filtros">Filtros<span id="nfil" class="nfil" hidden></span></button>
+  </div>
+  <p id="estado" class="estado" role="status" aria-live="polite"></p>
+</div>
+
+<div id="info" class="modal" hidden>
+  <div class="caja" role="dialog" aria-modal="true" aria-labelledby="info-t">
+    <button id="info-x" class="icono" type="button" aria-label="Cerrar">×</button>
+    <h2 id="info-t">Antes de nada</h2>
+    <p><strong>Información orientativa.</strong> Esta web no sustituye la consulta con tu médico, que es quien puede valorar si un ensayo es adecuado para ti. Que un ensayo aparezca aquí no significa que puedas participar: para ello hay que cumplir sus criterios de inclusión y exclusión. Para pedir información, contacta con el centro o el promotor a través de la ficha oficial del REec.</p>
+    <h2>Fuentes</h2>
+    <p>Datos: <a href="https://reec.aemps.es/" target="_blank" rel="noopener">Registro Español de Estudios Clínicos (REec), AEMPS</a>, actualizados el <span id="fecha"></span>. Solo se muestran ensayos de hematología con al menos un centro abierto.</p>
+    <p>Enfermedades agrupadas según la clasificación de la OMS de neoplasias hematolinfoides (5.ª ed., 2022); las enfermedades no neoplásicas y el trasplante se agrupan por criterio clínico.</p>
+    <p>Mapa base: <a href="https://www.ign.es" target="_blank" rel="noopener">Instituto Geográfico Nacional</a> (CC BY 4.0 scne.es).</p>
+    <h2>Próximamente</h2>
+    <p>Recursos de apoyo social cerca de cada hospital (asociaciones de pacientes, alojamiento para familiares).</p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="data/ensayos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
