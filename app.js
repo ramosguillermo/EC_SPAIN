@@ -47,7 +47,7 @@
   var cache = {};
   T.forEach(function (e) {
     var ents = (e.entidades || []).map(function (i) { return ENT[i] ? ENT[i].n + " " + (GR[ENT[i].g] ? GR[ENT[i].g].n : "") : ""; });
-    cache[e.identificador] = norm([e.identificador, tituloEnsayo(e), e.titulo_cientifico, e.indicacion, e.medicamentos, e.promotor,
+    cache[e.identificador] = norm([e.identificador, e.nombre, e.protocolo, tituloEnsayo(e), e.titulo_cientifico, e.indicacion, e.medicamentos, e.promotor,
       ents.join(" "), e.centros.map(function (c) { return c.centro + " " + c.localidad; }).join(" ")].join(" "));
   });
 
@@ -168,6 +168,7 @@
       .filter(function (a) { return String(e[a[0]]) === "1"; }).map(function (a) { return a[1]; });
     if (edades.length) sec("Edades incluidas", el("p", null, edades.join(", ")));
     if (e.promotor) sec("Promotor", el("p", null, e.promotor));
+    if (e.protocolo) sec("Código de protocolo", el("p", null, e.protocolo));
     var ul = el("ul");
     e.centros.forEach(function (c) {
       var li = el("li"), id = c.hospital_id || (c.centro + "|" + c.lat);
@@ -180,10 +181,26 @@
       ul.appendChild(li);
     });
     sec("Centros abiertos (" + e.centros.length + ")", ul);
-    [["Criterios de inclusión", e.criterios_inclusion], ["Criterios de exclusión", e.criterios_exclusion]].forEach(function (x) {
-      if (!x[1]) return;
-      var dt = el("details"); dt.appendChild(el("summary", null, x[0])); dt.appendChild(el("pre", null, x[1])); d.appendChild(dt);
+    var cr = e.criterios || { inc: [], exc: [] };
+    if (cr.fuente === "CTIS" && (cr.inc.length || cr.exc.length)) d.appendChild(el("p", "aviso", "El REec no publica los criterios de este ensayo; se muestran los criterios principales del registro europeo (CTIS)."));
+    [["Criterios de inclusión", cr.inc], ["Criterios de exclusión", cr.exc]].forEach(function (x) {
+      if (!x[1].length) return;
+      var n = x[1].filter(function (l) { return l.indexOf("§ ") !== 0; }).length;
+      var dt = el("details"); dt.appendChild(el("summary", null, x[0] + " (" + n + ")"));
+      var ul2 = el("ul", "crit");
+      x[1].forEach(function (l) {
+        var enc = l.indexOf("§ ") === 0;
+        ul2.appendChild(el("li", enc ? "enc" : null, enc ? l.slice(2) : l));
+      });
+      dt.appendChild(ul2); d.appendChild(dt);
     });
+    if (!cr.inc.length && !cr.exc.length) {
+      d.appendChild(el("p", "aviso", "El REec no publica los criterios de inclusión y exclusión de este ensayo."));
+      if (e.ctis) {
+        var c = el("a", "btn claro", "Buscar sus criterios en el registro europeo (CTIS)");
+        c.href = e.ctis; c.target = "_blank"; c.rel = "noopener"; d.appendChild(c);
+      }
+    }
     var v = el("button", "btn claro", "Ver todos sus centros en el mapa"); v.type = "button";
     v.addEventListener("click", function () { enfocar(e.identificador); });
     d.appendChild(v);
@@ -195,7 +212,9 @@
   function tarjeta(e, h) {
     var abierta = estado.exp === e.identificador;
     var art = el("article", "ens" + (abierta ? " sel" : ""));
-    var t = el("h4"), b = el("button", null, corto(tituloEnsayo(e), 150));
+    var t = el("h4"), b = el("button");
+    if (e.nombre) b.appendChild(el("span", "nom", e.nombre));
+    b.appendChild(document.createTextNode(corto(tituloEnsayo(e), e.nombre ? 130 : 150)));
     b.type = "button"; b.setAttribute("aria-expanded", abierta ? "true" : "false");
     b.addEventListener("click", function () {
       estado.exp = abierta ? null : e.identificador;
@@ -262,7 +281,7 @@
     if (!m.length) { cont.appendChild(el("p", null, "Ningún ensayo coincide.")); cont.hidden = false; return; }
     cont.appendChild(el("p", null, m.length + " ensayo(s) resaltados en el mapa. Pulsa uno para ver solo sus centros:"));
     m.slice(0, 6).forEach(function (e) {
-      var b = el("button", null, corto(tituloEnsayo(e), 110)); b.type = "button"; b.setAttribute("role", "option");
+      var b = el("button", null, (e.nombre ? e.nombre + " · " : "") + corto(tituloEnsayo(e), 110)); b.type = "button"; b.setAttribute("role", "option");
       b.appendChild(el("small", null, e.identificador + " · " + e.centros.length + " centro(s)"));
       b.addEventListener("mousedown", function (ev) { ev.preventDefault(); });
       b.addEventListener("click", function () { enfocar(e.identificador); });
@@ -277,7 +296,7 @@
     calcular();
     var foco = estado.ens ? T.filter(function (e) { return e.identificador === estado.ens; })[0] : null;
     $("#foco").hidden = !foco;
-    if (foco) $("#foco-t").textContent = corto(tituloEnsayo(foco), 90);
+    if (foco) $("#foco-t").textContent = (foco.nombre ? foco.nombre + " · " : "") + corto(tituloEnsayo(foco), 90);
     $("#estado").textContent = res.ensayos + " ensayo(s) · " + res.hospitales + " centro(s)" + (hayFiltro() ? " resaltados en el mapa" : " abiertos en España");
     var nf = nFiltros(), b = $("#nfil"); b.hidden = !nf; b.textContent = nf;
     if (estado.sitio && !(S[estado.sitio])) estado.sitio = null;
