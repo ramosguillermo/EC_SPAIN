@@ -63,9 +63,10 @@
       return i === id || (en.c || []).indexOf(id) >= 0;
     });
   }
-  function soloPorGenerico(e) {   // coincide con la enfermedad elegida solo porque el REec la indica de forma general
-    if (!estado.enf) return false;
-    var tipo = estado.enf.charAt(0), id = estado.enf.slice(2);
+  function soloPorGenerico(e, v) {   // coincide con la enfermedad elegida solo porque el REec la indica de forma general
+    v = v === undefined ? estado.enf : v;
+    if (!v) return false;
+    var tipo = v.charAt(0), id = v.slice(2);
     return !(e.entidades || []).some(function (i) {
       return tipo === "g" ? (ENT[i] && ENT[i].g === id) : i === id;
     });
@@ -265,6 +266,30 @@
     if (abierta) art.appendChild(ficha(e, h));
     return art;
   }
+  function contactoPromotor(lista) {
+    var box = el("div", "contacto"), vistos = {}, cs = [];
+    lista.forEach(function (e) {
+      var c = e.contacto; if (!c || !(c.tel || c.mail)) return;
+      var k = (c.mail + "|" + c.tel).toLowerCase(); if (vistos[k]) { vistos[k].n++; return; }
+      vistos[k] = { c: c, n: 1 }; cs.push(vistos[k]);
+    });
+    box.appendChild(el("h5", null, "Contacto del promotor (según el REec)"));
+    if (!cs.length) { box.appendChild(el("p", "mut", "El REec no publica datos de contacto de este promotor.")); return box; }
+    cs.sort(function (a, b) { return (b.c.es ? 1 : 0) - (a.c.es ? 1 : 0) || b.n - a.n; });
+    if (!cs.some(function (x) { return x.c.es; })) box.appendChild(el("p", "mut", "Ninguno de los contactos publicados parece estar en España."));
+    cs.forEach(function (x) {
+      var c = x.c, d = el("div", "ct");
+      d.appendChild(el("span", "tag" + (c.es ? " es" : ""), c.es ? "En España" : "Fuera de España"));
+      if (c.persona) d.appendChild(el("div", null, c.persona));
+      if (c.dom) d.appendChild(el("div", "mut", c.dom));
+      if (c.tel) { var a = el("a", null, c.tel); a.href = "tel:" + c.tel.replace(/[^\d+]/g, ""); d.appendChild(el("div")).appendChild(a); }
+      if (c.mail) { var m = el("a", null, c.mail); m.href = "mailto:" + c.mail; d.appendChild(el("div")).appendChild(m); }
+      if (cs.length > 1 && x.n > 1) d.appendChild(el("div", "mut", "Figura en " + x.n + " ensayos"));
+      box.appendChild(d);
+    });
+    box.appendChild(el("p", "mut", "Es el contacto que el promotor dio al registrarse: a veces es una CRO o una filial, y puede estar en otro país."));
+    return box;
+  }
   function renderPanelProm() {
     var p = $("#panel"), cuerpo = $("#pcuerpo"); cuerpo.textContent = "";
     var lista = T.filter(function (e) { return e.promotor_c === prom; });
@@ -278,6 +303,7 @@
     $("#psub").textContent = tipo + " · " + lista.length + " ensayo(s)";
     var nn = Object.keys(nombres);
     if (nn.length > 1 || (nn[0] && nn[0] !== prom)) cuerpo.appendChild(el("p", "dir", "Figura en el REec como: " + nn.join("; ")));
+    cuerpo.appendChild(contactoPromotor(lista));
     var filtro = hayFiltro();
     cuerpo.appendChild(el("p", "cuenta", filtro ? ok.length + " de " + lista.length + " ensayos coinciden con tu búsqueda" : lista.length + " ensayo(s) abierto(s) en España"));
     if (ok.length) { var l = el("div", "lista"); ok.forEach(function (e) { l.appendChild(tarjeta(e, null)); }); cuerpo.appendChild(l); }
@@ -454,18 +480,31 @@
   function cambiarVista(v, sinRender) {
     if (v === vista) return;
     vista = v;
-    $("#v-mapa").classList.toggle("on", v === "mapa"); $("#v-red").classList.toggle("on", v === "red");
-    $("#red").hidden = v !== "red"; $("#mapa").style.visibility = v === "red" ? "hidden" : "";
+    Array.prototype.forEach.call(document.querySelectorAll("#tabs button"), function (b) { b.classList.toggle("on", b.getAttribute("data-v") === v); });
+    $("#red").hidden = v !== "red"; $("#cand").hidden = v !== "cand";
+    $("#mapa").style.visibility = v === "mapa" ? "" : "hidden";
+    $("#barra").hidden = v === "cand";
     $("#panel").hidden = true; cerrarHojas();
-    if (v === "red") { if (window.EC && EC.red) EC.red.mostrar(); }
-    else { prom = null; setTimeout(function () { map.invalidateSize(); }, 0); }
-    if (!sinRender) render(v !== "red");
+    if (v !== "red") prom = null;
+    if (v === "red" && window.EC && EC.red) EC.red.mostrar();
+    if (v === "cand" && window.EC && EC.cand) EC.cand.mostrar();
+    if (v === "mapa") setTimeout(function () { map.invalidateSize(); }, 0);
+    if (!sinRender && v !== "cand") render(v === "mapa");
   }
-  $("#v-mapa").addEventListener("click", function () { cambiarVista("mapa"); });
-  $("#v-red").addEventListener("click", function () { cambiarVista("red"); });
+  Array.prototype.forEach.call(document.querySelectorAll("#tabs button"), function (b) {
+    b.addEventListener("click", function () { cambiarVista(b.getAttribute("data-v")); });
+  });
   window.EC = {
+    el: el, ficha: ficha, cumpleEnf: cumpleEnf, soloPorGenerico: soloPorGenerico, chips: chipsEnsayo, corto: corto, tituloEnsayo: tituloEnsayo, norm: norm,
+    opcionesEnf: function () { return $("#f-enf").innerHTML; },
     T: T, estado: function () { return estado; }, vistos: function () { return res.vistos; }, hayFiltro: hayFiltro,
     abrirPromotor: function (c, ensayo) { prom = c; estado.exp = ensayo || null; renderPanelProm(); $("#pcuerpo").scrollTop = 0; cerrarHojas(); },
+    grupos: function (e) {      // grupos de enfermedad (OMS) del ensayo, sin repetir y en orden
+      var g = [];
+      (e.entidades || []).forEach(function (i) { var x = ENT[i] ? ENT[i].g : null; if (x && g.indexOf(x) < 0) g.push(x); });
+      return g;
+    },
+    nombreGrupo: function (id) { return GR[id] ? GR[id].n : id; },
     promotorAbierto: function () { return prom; }, cerrarPanel: cerrarPanel
   };
 
