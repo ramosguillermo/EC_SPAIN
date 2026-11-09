@@ -14,9 +14,11 @@
 
 <section id="cand" class="cand" hidden aria-label="Búsqueda por candidato"></section>
 
+<div id="chk" class="modal chk" hidden></div>
+
 <nav id="tabs" class="tabs" aria-label="Secciones">
   <button type="button" data-v="mapa" class="on"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>Buscar</button>
-  <button type="button" data-v="red"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4.5" cy="6" r="1.8"/><circle cx="19.5" cy="7" r="1.8"/><circle cx="6" cy="19" r="1.8"/><circle cx="19" cy="18.5" r="1.8"/><path d="M10 10.5L5.8 7.2M14.2 10.8l4-2.8M10.3 14l-3 3.7M14 14l4 3.4"/></svg>Promotores</button>
+  <button type="button" data-v="red"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4.5" cy="6" r="1.8"/><circle cx="19.5" cy="7" r="1.8"/><circle cx="6" cy="19" r="1.8"/><circle cx="19" cy="18.5" r="1.8"/><path d="M10 10.5L5.8 7.2M14.2 10.8l4-2.8M10.3 14l-3 3.7M14 14l4 3.4"/></svg>Red</button>
   <button type="button" data-v="cand"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-4 3.5-6 7-6s6.2 2 7 6"/></svg>Candidato</button>
 </nav>
 
@@ -54,6 +56,7 @@
 <div id="barra" class="barra">
   <div id="foco" class="foco" hidden><span id="foco-t"></span><button id="foco-x" type="button" aria-label="Quitar ensayo seleccionado">×</button></div>
   <div id="sug" class="sug" hidden role="listbox" aria-label="Ensayos que coinciden"></div>
+  <div id="chips-rec"></div>
   <div class="fila">
     <input id="q" type="search" placeholder="Enfermedad, medicamento, hospital, nº de ensayo…" aria-label="Buscar" autocomplete="off">
     <button id="btn-filtros" class="sec" type="button" aria-expanded="false" aria-controls="filtros">Filtros<span id="nfil" class="nfil" hidden></span></button>

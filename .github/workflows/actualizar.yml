@@ -1,0 +1,47 @@
+name: Actualizar datos y publicar
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # lunes 04:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["revision/decisiones.json", "web/**.js", "web/**.css", "web/index.html"]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: actualizar, cancel-in-progress: false }
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Caché de datos descargados
+        uses: actions/cache@v4
+        with:
+          path: |
+            datos/raw
+            datos/raw_ctis
+            datos/raw_ctgov
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+      - name: Actualizar
+        run: python actualizar.py
+      - name: Copiar decisiones a la web
+        run: |
+          mkdir -p web/revision
+          [ -f revision/decisiones.json ] && cp revision/decisiones.json web/revision/decisiones.json || true
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config user.name "actualizador"; git config user.email "actions@users.noreply.github.com"
+          git add datos/*.csv datos/*.json web/data web/revision/pendientes.json datos/novedades.md 2>/dev/null || true
+          git commit -m "Actualización automática" || echo "Sin cambios"
+          git pull --rebase && git push || true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: web }
+      - uses: actions/deploy-pages@v4

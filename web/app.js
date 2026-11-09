@@ -48,11 +48,11 @@
   T.forEach(function (e) {
     var ents = (e.entidades || []).map(function (i) { return ENT[i] ? ENT[i].n + " " + (GR[ENT[i].g] ? GR[ENT[i].g].n : "") : ""; });
     cache[e.identificador] = norm([e.identificador, e.nombre, e.protocolo, tituloEnsayo(e), e.titulo_cientifico, e.indicacion, e.medicamentos, e.promotor,
-      ents.join(" "), e.centros.map(function (c) { return c.centro + " " + c.localidad; }).join(" ")].join(" "));
+      ents.join(" "), e.centros.map(function (c) { return c.centro + " " + c.localidad + " " + (c.ip || ""); }).join(" ")].join(" "));
   });
 
   // --- estado y filtros -----------------------------------------------------
-  var estado = { q: "", enf: "", ccaa: "", prov: "", fase: "", seg: false, ens: null, sitio: null, exp: null };
+  var estado = { q: "", enf: "", ccaa: "", prov: "", fase: "", seg: false, rec: true, nrec: false, ens: null, sitio: null, exp: null };
 
   function cumpleEnf(e, v) {      // v = "g:grupo" o "e:entidad"; los genéricos del REec cubren a sus concretas
     if (!v) return true;
@@ -74,6 +74,8 @@
   function coincide(e) {
     if (estado.ens) return e.identificador === estado.ens;
     if (!estado.seg && e.seguimiento) return false;
+    var nr = !!(e.reclutamiento && e.reclutamiento.estado === "no_recluta");
+    if (nr ? !estado.nrec : !estado.rec) return false;
     if (estado.fase && (e.fase || "").split("/").indexOf(estado.fase) < 0) return false;
     if (!cumpleEnf(e, estado.enf)) return false;
     var q = norm(estado.q).trim().split(/\s+/).filter(Boolean);
@@ -82,7 +84,7 @@
   function hayFiltro() { return !!(estado.q.trim() || estado.enf || estado.fase || estado.ccaa || estado.prov || estado.ens); }
 
   var res = { ensayos: 0, hospitales: 0, vistos: {} };
-  var vista = "mapa", prom = null;
+  var vista = "mapa", prom = null, ipSel = null;
   function calcular() {
     var okE = {}, vistos = {}, nh = 0;
     T.forEach(function (e) { okE[e.identificador] = coincide(e); });
@@ -161,6 +163,7 @@
   function ficha(e, h) {
     var d = el("div", "det");
     function sec(t, node) { d.appendChild(el("h5", null, t)); d.appendChild(node); }
+    if (e.reclutamiento) d.appendChild(el("p", "aviso", (e.reclutamiento.estado === "no_recluta" ? "Es posible que este ensayo ya no reclute nuevos pacientes: " : "El estado de reclutamiento no está confirmado: ") + e.reclutamiento.motivos.join("; ") + ". Confírmalo con el centro."));
     if (e.seguimiento) d.appendChild(el("p", "aviso", "Estudio de seguimiento o extensión: normalmente solo admite a personas que ya participaron en un estudio previo."));
     if (soloPorGenerico(e)) d.appendChild(el("p", "aviso", "El registro indica la enfermedad de forma general. Comprueba en los criterios de inclusión si incluye la que buscas."));
     if (e.indicacion) sec("Enfermedad o condición según el REec", el("p", null, e.indicacion));
@@ -187,6 +190,7 @@
         b.addEventListener("click", function () { if (H[id]) abrirSitio(H[id].sitio); });
         li.appendChild(b);
       }
+      if (c.ip) li.appendChild(el("span", "ipn", " · IP: " + c.ip));
       ul.appendChild(li);
     });
     sec("Centros abiertos (" + e.centros.length + ")", ul);
@@ -240,6 +244,11 @@
         c.href = e.ctis; c.target = "_blank"; c.rel = "noopener"; d.appendChild(c);
       }
     }
+    if (cr.inc.length || cr.exc.length) {
+      var ck = el("button", "btn", "Comprobar criterios uno por uno"); ck.type = "button";
+      ck.addEventListener("click", function () { if (window.EC && EC.checklist) EC.checklist(e); });
+      d.appendChild(ck);
+    }
     var v = el("button", "btn claro", "Ver todos sus centros en el mapa"); v.type = "button";
     v.addEventListener("click", function () { enfocar(e.identificador); });
     d.appendChild(v);
@@ -290,7 +299,32 @@
     box.appendChild(el("p", "mut", "Es el contacto que el promotor dio al registrarse: a veces es una CRO o una filial, y puede estar en otro país."));
     return box;
   }
+  function renderPanelIp() {
+    var p = $("#panel"), cuerpo = $("#pcuerpo"); cuerpo.textContent = "";
+    var lista = T.filter(function (e) { return e.centros.some(function (c) { return c.ip === ipSel; }); });
+    if (!lista.length) { p.hidden = true; return; }
+    p.hidden = false;
+    var ok = lista.filter(function (e) { return res.vistos[e.identificador]; });
+    var otros = lista.filter(function (e) { return !res.vistos[e.identificador]; });
+    var sedes = {};
+    lista.forEach(function (e) { e.centros.forEach(function (c) { if (c.ip === ipSel) sedes[c.centro] = 1; }); });
+    $("#ptit").textContent = ipSel;
+    $("#psub").textContent = "Investigador principal · " + lista.length + " ensayo(s)";
+    cuerpo.appendChild(el("p", "dir", Object.keys(sedes).join("; ")));
+    var proms = {}; lista.forEach(function (e) { proms[e.promotor_c] = (proms[e.promotor_c] || 0) + 1; });
+    cuerpo.appendChild(el("p", "dir", "Promotores: " + Object.keys(proms).sort(function (a, b) { return proms[b] - proms[a]; }).map(function (k) { return k + " (" + proms[k] + ")"; }).join(", ")));
+    var filtro = hayFiltro();
+    cuerpo.appendChild(el("p", "cuenta", filtro ? ok.length + " de " + lista.length + " ensayos coinciden con tu búsqueda" : lista.length + " ensayo(s) abierto(s) en España"));
+    if (ok.length) { var l = el("div", "lista"); ok.forEach(function (e) { l.appendChild(tarjeta(e, null)); }); cuerpo.appendChild(l); }
+    if (otros.length) {
+      var dt = el("details", "otros"); dt.open = !ok.length;
+      dt.appendChild(el("summary", null, (ok.length ? "Otros " : "") + otros.length + " ensayo(s) que no coinciden"));
+      var l2 = el("div", "lista"); otros.forEach(function (e) { l2.appendChild(tarjeta(e, null)); }); dt.appendChild(l2);
+      cuerpo.appendChild(dt);
+    }
+  }
   function renderPanelProm() {
+    if (ipSel) { renderPanelIp(); return; }
     var p = $("#panel"), cuerpo = $("#pcuerpo"); cuerpo.textContent = "";
     var lista = T.filter(function (e) { return e.promotor_c === prom; });
     if (!lista.length) { p.hidden = true; return; }
@@ -315,7 +349,7 @@
     }
   }
   function renderPanel() {
-    if (vista === "red") { if (!prom) $("#panel").hidden = true; else renderPanelProm(); return; }
+    if (vista === "red") { if (!prom && !ipSel) $("#panel").hidden = true; else renderPanelProm(); return; }
     var p = $("#panel"), s = S[estado.sitio];
     if (!s) { p.hidden = true; return; }
     p.hidden = false;
@@ -351,7 +385,7 @@
   }
   function cerrarPanel() {
     estado.sitio = null; estado.exp = null; $("#panel").hidden = true;
-    if (vista === "red") { prom = null; if (window.EC && EC.red) EC.red.actualizar(); } else pintarMapa(false);
+    if (vista === "red") { prom = null; ipSel = null; if (window.EC && EC.red) EC.red.actualizar(); } else pintarMapa(false);
   }
 
   // --- enfocar un ensayo (resalta sus centros en el mapa) ---------------------
@@ -368,7 +402,7 @@
     cont.textContent = "";
     if (!q.length) { cont.hidden = true; return; }
     var m = T.filter(function (e) {
-      return (estado.seg || !e.seguimiento) && q.every(function (w) { return cache[e.identificador].indexOf(w) >= 0; });
+      return (estado.seg || !e.seguimiento) && (function () { var nr = !!(e.reclutamiento && e.reclutamiento.estado === "no_recluta"); return nr ? estado.nrec : estado.rec; })() && q.every(function (w) { return cache[e.identificador].indexOf(w) >= 0; });
     });
     if (!m.length) { cont.appendChild(el("p", null, "Ningún ensayo coincide.")); cont.hidden = false; return; }
     cont.appendChild(el("p", null, m.length + " ensayo(s) resaltados en el mapa. Pulsa uno para ver solo sus centros:"));
@@ -457,9 +491,9 @@
   $("#f-fase").addEventListener("change", cambio(function (ev) { estado.fase = ev.target.value; estado.ens = null; }));
   $("#f-seg").addEventListener("change", cambio(function (ev) { estado.seg = ev.target.checked; }));
   $("#limpiar").addEventListener("click", function () {
-    estado = { q: "", enf: "", ccaa: "", prov: "", fase: "", seg: false, ens: null, sitio: null, exp: null };
+    estado = { q: "", enf: "", ccaa: "", prov: "", fase: "", seg: false, rec: true, nrec: false, ens: null, sitio: null, exp: null };
     $("#q").value = ""; $("#f-enf").value = ""; $("#f-ccaa").value = ""; opcionesProv(); $("#f-fase").value = ""; $("#f-seg").checked = false;
-    render(true);
+    refrescarChips(); render(true);
   });
   $("#foco-x").addEventListener("click", quitarFoco);
   $("#pcerrar").addEventListener("click", cerrarPanel);
@@ -477,6 +511,21 @@
   });
   map.on("click", function () { cerrarHojas(); });
 
+  // --- chips «Reclutando / En seguimiento» ------------------------------------------
+  var chipsInst = [];
+  var nNr = T.filter(function (e) { return e.reclutamiento && e.reclutamiento.estado === "no_recluta"; }).length;
+  function refrescarChips() { chipsInst.forEach(function (c) { c.rec.classList.toggle("on", estado.rec); c.nrec.classList.toggle("on", estado.nrec); c.rec.setAttribute("aria-pressed", estado.rec); c.nrec.setAttribute("aria-pressed", estado.nrec); }); }
+  function chipsRec(parent, alCambiar) {
+    var w = el("div", "chips-rec"), a = el("button", null, "Reclutando "), b = el("button", null, "En seguimiento, sin reclutar ");
+    a.type = b.type = "button"; a.appendChild(el("b", null, String(T.length - nNr))); b.appendChild(el("b", null, String(nNr)));
+    a.title = "Ensayos que están reclutando pacientes"; b.title = "Ensayos activos que han cerrado el reclutamiento y siguen con los pacientes ya incluidos";
+    a.addEventListener("click", function () { estado.rec = !estado.rec; refrescarChips(); alCambiar(); });
+    b.addEventListener("click", function () { estado.nrec = !estado.nrec; refrescarChips(); alCambiar(); });
+    w.appendChild(a); w.appendChild(b); parent.appendChild(w);
+    chipsInst.push({ rec: a, nrec: b }); refrescarChips(); return w;
+  }
+  chipsRec($("#chips-rec"), function () { estado.ens = null; render(true); });
+
   function cambiarVista(v, sinRender) {
     if (v === vista) return;
     vista = v;
@@ -485,7 +534,7 @@
     $("#mapa").style.visibility = v === "mapa" ? "" : "hidden";
     $("#barra").hidden = v === "cand";
     $("#panel").hidden = true; cerrarHojas();
-    if (v !== "red") prom = null;
+    if (v !== "red") { prom = null; ipSel = null; }
     if (v === "red" && window.EC && EC.red) EC.red.mostrar();
     if (v === "cand" && window.EC && EC.cand) EC.cand.mostrar();
     if (v === "mapa") setTimeout(function () { map.invalidateSize(); }, 0);
@@ -498,14 +547,15 @@
     el: el, ficha: ficha, cumpleEnf: cumpleEnf, soloPorGenerico: soloPorGenerico, chips: chipsEnsayo, corto: corto, tituloEnsayo: tituloEnsayo, norm: norm,
     opcionesEnf: function () { return $("#f-enf").innerHTML; },
     T: T, estado: function () { return estado; }, vistos: function () { return res.vistos; }, hayFiltro: hayFiltro,
-    abrirPromotor: function (c, ensayo) { prom = c; estado.exp = ensayo || null; renderPanelProm(); $("#pcuerpo").scrollTop = 0; cerrarHojas(); },
+    abrirPromotor: function (c, ensayo) { prom = c; ipSel = null; estado.exp = ensayo || null; renderPanelProm(); $("#pcuerpo").scrollTop = 0; cerrarHojas(); },
     grupos: function (e) {      // grupos de enfermedad (OMS) del ensayo, sin repetir y en orden
       var g = [];
       (e.entidades || []).forEach(function (i) { var x = ENT[i] ? ENT[i].g : null; if (x && g.indexOf(x) < 0) g.push(x); });
       return g;
     },
     nombreGrupo: function (id) { return GR[id] ? GR[id].n : id; },
-    promotorAbierto: function () { return prom; }, cerrarPanel: cerrarPanel
+    abrirInvestigador: function (n, ensayo) { ipSel = n; prom = null; estado.exp = ensayo || null; renderPanelProm(); $("#pcuerpo").scrollTop = 0; cerrarHojas(); },
+    promotorAbierto: function () { return prom; }, investigadorAbierto: function () { return ipSel; }, chipsRec: chipsRec, refrescarChips: refrescarChips, cerrarPanel: cerrarPanel
   };
 
   $("#fecha").textContent = D.meta.generado ? D.meta.generado.split("-").reverse().join("/") : "—";

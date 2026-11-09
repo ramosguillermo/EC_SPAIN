@@ -167,3 +167,35 @@ details h5{margin:.6rem 0 .1rem;font-size:.8rem}
 .cand .rz .ev{color:var(--mut);font-style:italic}
 .cand .btn{margin-top:.5rem}
 @media (max-width:560px){.cand .form{grid-template-columns:1fr}}
+
+/* Lista de comprobación de criterios */
+.chk{z-index:1500}
+.chk .caja.ancha{max-width:760px;width:calc(100vw - 24px);max-height:calc(100vh - 32px);overflow:auto;position:relative}
+.chk .icono{position:absolute;top:10px;right:10px}
+.chk h2{margin:.1rem 2.2rem .2rem 0;font-size:1.15rem}
+.chk h3{margin:1.1rem 0 .1rem;font-size:.98rem}
+.chk h4.enc{margin:.8rem 0 .2rem;font-size:.78rem;color:var(--mut)}
+.chk-res{position:sticky;top:-1px;z-index:2;margin:.6rem 0;padding:.6rem .8rem;border-radius:10px;font-size:.86rem;font-weight:600;background:#eee}
+.chk-res.no{background:#ffe1e1;color:#8a0000}.chk-res.rev{background:#fff3cd;color:#6a5200}.chk-res.si{background:#dff5e1;color:#14532d}
+.fila-c{padding:.55rem .6rem;margin:.3rem 0;border:1px solid var(--line);border-radius:10px}
+.fila-c p{margin:0 0 .35rem;font-size:.84rem}
+.fila-c.mal{border-color:#d33;background:#fff6f6}.fila-c.bien{border-color:#9bd3a4;background:#f6fcf7}
+.ops{display:flex;gap:14px;font-size:.82rem}.ops label{display:flex;align-items:center;gap:4px;cursor:pointer}
+
+/* Chips de reclutamiento */
+.chips-rec{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 8px}
+.chips-rec button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.32rem .75rem;font-size:.8rem;cursor:pointer;color:var(--mut)}
+.chips-rec button b{font-weight:600;margin-left:.2rem}
+.chips-rec button.on{background:var(--btn);border-color:var(--btn);color:#fff}
+.cand .chips-rec{margin:.2rem 0 .6rem}
+.ipn{color:var(--mut)}
+
+/* Capas de la red */
+.r-capas{position:absolute;top:16px;right:16px;display:flex;gap:4px;background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:4px;z-index:5}
+.r-capas button{border:none;background:none;padding:7px 11px;border-radius:10px;cursor:pointer;font-size:.82rem;font-weight:600;color:var(--mut)}
+.r-capas button.on{background:var(--btn);color:#fff}
+.r-n.i path{stroke:#fff;stroke-width:1.4}
+.r-n.i:hover path,.r-n.i.abierto path{stroke:var(--ink);stroke-width:2.6}
+.r-txt text.ip{fill:#b3005f}
+.r-ley .c.d{border-radius:2px;transform:rotate(45deg) scale(.8)}
+@media (max-width:560px){.r-capas{top:64px;right:12px}.r-capas button{padding:6px 8px;font-size:.76rem}}

@@ -1,0 +1,3935 @@
+{
+ "promotores": [
+  {
+   "canonico": "Incyte",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Incyte Corp."
+   ]
+  },
+  {
+   "canonico": "Prinses Maxima Centrum voor Kinderoncologie B V",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Prinses Maxima Centrum voor Kinderoncologie B.V."
+   ]
+  },
+  {
+   "canonico": "Acrotech",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Acrotech Biopharma Inc."
+   ]
+  },
+  {
+   "canonico": "HZRM Haemophilie-Zentrum Rhein Main",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "HZRM Haemophilie-Zentrum Rhein Main GmbH"
+   ]
+  },
+  {
+   "canonico": "Charite Universitaetsmedizin Berlin KoR",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Charite Universitaetsmedizin Berlin KöR"
+   ]
+  },
+  {
+   "canonico": "Pfizer",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Pfizer Inc."
+   ]
+  },
+  {
+   "canonico": "Regeneron",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Regeneron Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "Enliven",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Enliven Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Hutchmed",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Hutchmed Ltd."
+   ]
+  },
+  {
+   "canonico": "Roche / Genentech",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Chugai Pharmaceutical Co. Ltd.",
+    "F. Hoffmann-La Roche AG",
+    "Genentech Inc."
+   ]
+  },
+  {
+   "canonico": "Kartos",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Kartos Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Novartis",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Novartis Pharma AG"
+   ]
+  },
+  {
+   "canonico": "GETH-TC",
+   "tipo": "cooperativo",
+   "origen": "regla",
+   "variantes": [
+    "Grupo Espanol De Trasplante Hematopoyetico Y Terapia Celular"
+   ]
+  },
+  {
+   "canonico": "Medical University Of Gdansk",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Medical University Of Gdansk"
+   ]
+  },
+  {
+   "canonico": "Oryzon Genomics",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Oryzon Genomics S.A."
+   ]
+  },
+  {
+   "canonico": "Takeda",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Takeda Development Center Americas Inc."
+   ]
+  },
+  {
+   "canonico": "Ajax",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Ajax Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "AbbVie",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "AbbVie Deutschland GmbH & Co. KG",
+    "Abbvie Deutschland GmbH & Co. KG"
+   ]
+  },
+  {
+   "canonico": "Ascentage",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Ascentage Pharma Group Inc."
+   ]
+  },
+  {
+   "canonico": "ITM Solucin",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "ITM Solucin GmbH"
+   ]
+  },
+  {
+   "canonico": "Grifols",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Grifols Therapeutics LLC"
+   ]
+  },
+  {
+   "canonico": "Arog",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Arog Pharmaceuticals, Inc."
+   ]
+  },
+  {
+   "canonico": "Bristol-Myers Squibb (incl. Celgene)",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Bristol Myers Squibb International Corporation",
+    "Bristol-Myers Squibb Services Unlimited Company",
+    "Celgene Corp."
+   ]
+  },
+  {
+   "canonico": "Galapagos",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Galapagos NV"
+   ]
+  },
+  {
+   "canonico": "Italfarmaco S p A",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Italfarmaco S.p.A."
+   ]
+  },
+  {
+   "canonico": "Janssen (Johnson & Johnson)",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Janssen - Cilag International",
+    "Janssen Cilag International"
+   ]
+  },
+  {
+   "canonico": "Kura",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Kura Oncology Inc."
+   ]
+  },
+  {
+   "canonico": "Catapult Therapeutics B V",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Catapult Therapeutics B.V."
+   ]
+  },
+  {
+   "canonico": "Sumitomo Pharma America",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Sumitomo Pharma America Inc."
+   ]
+  },
+  {
+   "canonico": "Medac Gesellschaft fuer klinische Spezialprapaerate mbH",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Medac Gesellschaft fuer klinische Spezialprapaerate mbH"
+   ]
+  },
+  {
+   "canonico": "Novo Nordisk",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Novo Nordisk A/S"
+   ]
+  },
+  {
+   "canonico": "Universita Degli Studi Di Milano Bicocca",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Universita Degli Studi Di Milano Bicocca"
+   ]
+  },
+  {
+   "canonico": "HOVON",
+   "tipo": "cooperativo",
+   "origen": "regla",
+   "variantes": [
+    "Hemato-Oncologie voor Volwassenen Nederland (Hovon) Stichting"
+   ]
+  },
+  {
+   "canonico": "Argenx",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Argenx"
+   ]
+  },
+  {
+   "canonico": "Sanofi",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Sanofi-Aventis Recherche & Developpement"
+   ]
+  },
+  {
+   "canonico": "Symbio",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Symbio Pharmaceuticals Ltd."
+   ]
+  },
+  {
+   "canonico": "AstraZeneca",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "AstraZeneca AB",
+    "Astrazeneca AB",
+    "Astrazeneca Farmaceutica Spain S.A."
+   ]
+  },
+  {
+   "canonico": "C4",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "C4 Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "GlaxoSmithKline",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Glaxosmithkline Research & Development Limited"
+   ]
+  },
+  {
+   "canonico": "Electra",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Electra Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Deciphera",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Deciphera Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "BeOne (BeiGene)",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "BeOne Medicines AG",
+    "BeOne Medicines I GmbH"
+   ]
+  },
+  {
+   "canonico": "Merck Sharp & Dohme (MSD)",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Merck Sharp & Dohme LLC"
+   ]
+  },
+  {
+   "canonico": "Viracta",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Viracta Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "USWM Ct",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "USWM Ct LLC"
+   ]
+  },
+  {
+   "canonico": "Leukos Biotech",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Leukos Biotech S.L."
+   ]
+  },
+  {
+   "canonico": "Affimed",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Affimed GmbH"
+   ]
+  },
+  {
+   "canonico": "Fundacion Para La Investigacion Y La Innovacion Biosanitaria Del Principado De Asturias",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacion Para La Investigacion Y La Innovacion Biosanitaria Del Principado De Asturias"
+   ]
+  },
+  {
+   "canonico": "Klinikum der Universitaet Muenchen AoR",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Klinikum der Universitaet Muenchen AöR"
+   ]
+  },
+  {
+   "canonico": "Curis",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Curis Inc."
+   ]
+  },
+  {
+   "canonico": "Cellcentric",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Cellcentric Limited"
+   ]
+  },
+  {
+   "canonico": "PETHEMA",
+   "tipo": "cooperativo",
+   "origen": "regla",
+   "variantes": [
+    "Fundacion PETHEMA",
+    "Fundacion Pethema",
+    "Pethema Fundacion"
+   ]
+  },
+  {
+   "canonico": "Fundacio De Recerca Clinic Barcelona-Institut D'Investigacions Biomediques August Pi I Sunyer",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacio De Recerca Clinic Barcelona-Institut D¿Investigacions Biomediques August Pi I Sunyer"
+   ]
+  },
+  {
+   "canonico": "Terns",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Terns Inc."
+   ]
+  },
+  {
+   "canonico": "Apellis",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Apellis Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "Iksuda",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Iksuda Therapeutics Limited"
+   ]
+  },
+  {
+   "canonico": "Ryvu",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Ryvu Therapeutics S.A."
+   ]
+  },
+  {
+   "canonico": "Pierre Fabre Medicament",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Pierre Fabre Medicament"
+   ]
+  },
+  {
+   "canonico": "Nuvalent",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Nuvalent Inc."
+   ]
+  },
+  {
+   "canonico": "Istituto Romagnolo Per Lo Studio Dei Tumori Dino Amadori IRST S r l",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Istituto Romagnolo Per Lo Studio Dei Tumori Dino Amadori IRST S.r.l."
+   ]
+  },
+  {
+   "canonico": "Eli Lilly",
+   "tipo": "industria",
+   "origen": "regla",
+   "variantes": [
+    "Eli Lilly & Co."
+   ]
+  },
+  {
+   "canonico": "Vall D Hebron Institute Of",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Vall D Hebron Institute Of Oncology"
+   ]
+  },
+  {
+   "canonico": "Quetzal",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Quetzal Therapeutics LLC"
+   ]
+  },
+  {
+   "canonico": "Institut Gustave Roussy",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Institut Gustave Roussy"
+   ]
+  },
+  {
+   "canonico": "Grupo Espanol De Enfermedades Mieloproliferativas Cronicas Ph",
+   "tipo": "cooperativo",
+   "origen": "auto",
+   "variantes": [
+    "Grupo Espanol De Enfermedades Mieloproliferativas Cronicas Ph"
+   ]
+  },
+  {
+   "canonico": "Stelexis Biosciences",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Stelexis Biosciences Inc."
+   ]
+  },
+  {
+   "canonico": "University Of Cologne",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "University Of Cologne"
+   ]
+  },
+  {
+   "canonico": "Clinica Universidad De Navarra",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Clinica Universidad De Navarra"
+   ]
+  },
+  {
+   "canonico": "K36",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "K36 Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Telios",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Telios Pharma Inc."
+   ]
+  },
+  {
+   "canonico": "Taiho",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Taiho Oncology Inc."
+   ]
+  },
+  {
+   "canonico": "Adc",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "ADC Therapeutics S.A.",
+    "ADC Therapeutics SA"
+   ]
+  },
+  {
+   "canonico": "European Myeloma Network",
+   "tipo": "cooperativo",
+   "origen": "regla",
+   "variantes": [
+    "European Myeloma Network B.V."
+   ]
+  },
+  {
+   "canonico": "GWT-Tud",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "GWT-Tud GmbH"
+   ]
+  },
+  {
+   "canonico": "Nuvig",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Nuvig Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Loxo",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Loxo Oncology Inc."
+   ]
+  },
+  {
+   "canonico": "Grupo Espanol De Leucemia Mieloide Cronica (GELMC)",
+   "tipo": "cooperativo",
+   "origen": "auto",
+   "variantes": [
+    "Grupo Espanol De Leucemia Mieloide Cronica (GELMC)"
+   ]
+  },
+  {
+   "canonico": "Aptose Biosciences",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Aptose Biosciences Inc."
+   ]
+  },
+  {
+   "canonico": "Blueprint",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Blueprint Medicines Corp."
+   ]
+  },
+  {
+   "canonico": "Gyala",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Gyala Therapeutics S.L."
+   ]
+  },
+  {
+   "canonico": "Qurient",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Qurient Co. Ltd."
+   ]
+  },
+  {
+   "canonico": "Idp Discovery",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Idp Discovery Pharma S.L."
+   ]
+  },
+  {
+   "canonico": "Syndax",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Syndax Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "Schrodinger",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Schrodinger Inc."
+   ]
+  },
+  {
+   "canonico": "Epizyme",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Epizyme Inc."
+   ]
+  },
+  {
+   "canonico": "Omeros",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Omeros Corp."
+   ]
+  },
+  {
+   "canonico": "Incyte Biosciences International S a r l",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Incyte Biosciences International S.a.r.l."
+   ]
+  },
+  {
+   "canonico": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)"
+   ]
+  },
+  {
+   "canonico": "Fundacion De Investigacion Biomedica De Salamanca",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacion De Investigacion Biomedica De Salamanca"
+   ]
+  },
+  {
+   "canonico": "GELTAMO",
+   "tipo": "cooperativo",
+   "origen": "regla",
+   "variantes": [
+    "Fundacion Geltamo"
+   ]
+  },
+  {
+   "canonico": "Universitaetsklinikum Muenster AoR",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Universitaetsklinikum Muenster AöR"
+   ]
+  },
+  {
+   "canonico": "Fundacion Para La Investigacion Biomedica Del Hospital Universitario La Paz",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacion Para La Investigacion Biomedica Del Hospital Universitario La Paz"
+   ]
+  },
+  {
+   "canonico": "Onechain Immunotherapeutics",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Onechain Immunotherapeutics S.L."
+   ]
+  },
+  {
+   "canonico": "Syros",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Syros Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "Institut De Recherches Internationales Servier IRIS",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Institut De Recherches Internationales Servier IRIS"
+   ]
+  },
+  {
+   "canonico": "Igi",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "IGI Therapeutics S.A."
+   ]
+  },
+  {
+   "canonico": "OSE Immunotherapeutics",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "OSE Immunotherapeutics"
+   ]
+  },
+  {
+   "canonico": "Immunome",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Immunome Inc."
+   ]
+  },
+  {
+   "canonico": "Instituto De Investigacion Marques De Valdecilla",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Instituto De Investigacion Marques De Valdecilla"
+   ]
+  },
+  {
+   "canonico": "Genmab",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Genmab A/S"
+   ]
+  },
+  {
+   "canonico": "Prelude",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Prelude Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Daiichi Sankyo",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Daiichi Sankyo Inc."
+   ]
+  },
+  {
+   "canonico": "Cogent Biosciences",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Cogent Biosciences Inc."
+   ]
+  },
+  {
+   "canonico": "Fundacio Sant Joan De Deu",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacio Sant Joan De Deu"
+   ]
+  },
+  {
+   "canonico": "Enterome",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Enterome"
+   ]
+  },
+  {
+   "canonico": "Swedish Orphan Biovitrum AB (publ)",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Swedish Orphan Biovitrum AB (publ)"
+   ]
+  },
+  {
+   "canonico": "Protagonist",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Protagonist Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Kite",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Kite Pharma Inc."
+   ]
+  },
+  {
+   "canonico": "St Anna Childrens Cancer Research Institute",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "St. Anna Childrens Cancer Research Institute GmbH"
+   ]
+  },
+  {
+   "canonico": "Climb Bio",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Climb Bio Inc."
+   ]
+  },
+  {
+   "canonico": "Insmed",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Insmed Inc."
+   ]
+  },
+  {
+   "canonico": "Karyopharm",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Karyopharm Therapeutics Inc."
+   ]
+  },
+  {
+   "canonico": "Grupo Cooperativo De Estudio Y Tratamiento De Las Leucemias Agudas Y Mielodisplasias",
+   "tipo": "cooperativo",
+   "origen": "auto",
+   "variantes": [
+    "Grupo Cooperativo De Estudio Y Tratamiento De Las Leucemias Agudas Y Mielodisplasias"
+   ]
+  },
+  {
+   "canonico": "Silence",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Silence Therapeutics PLC"
+   ]
+  },
+  {
+   "canonico": "Rocket",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Rocket Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "Sobi",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Sobi Inc."
+   ]
+  },
+  {
+   "canonico": "Association International Extranodal Lymphoma Study",
+   "tipo": "cooperativo",
+   "origen": "auto",
+   "variantes": [
+    "Association International Extranodal Lymphoma Study Group"
+   ]
+  },
+  {
+   "canonico": "Agios",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Agios Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "BioInvent",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "BioInvent International AB"
+   ]
+  },
+  {
+   "canonico": "Alexion",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Alexion Pharmaceuticals Inc."
+   ]
+  },
+  {
+   "canonico": "Fundacio Institut De Recerca De L'Hospital De La Santa Creu I Sant Pau",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacio Institut De Recerca De L'Hospital De La Santa Creu I Sant Pau"
+   ]
+  },
+  {
+   "canonico": "Servier Affaires Medicales",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Servier Affaires Medicales"
+   ]
+  },
+  {
+   "canonico": "Acerta Pharma B V",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Acerta Pharma B.V."
+   ]
+  },
+  {
+   "canonico": "European Organisation For Research And Treatment Of Cancer",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "European Organisation For Research And Treatment Of Cancer"
+   ]
+  },
+  {
+   "canonico": "Aop Orphan",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Aop Orphan Pharmaceuticals GmbH"
+   ]
+  },
+  {
+   "canonico": "Philogen S p A",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Philogen S.p.A."
+   ]
+  },
+  {
+   "canonico": "Vaestra Goetalandsregionen",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Vaestra Goetalandsregionen"
+   ]
+  },
+  {
+   "canonico": "Bioline Rx",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Bioline Rx Ltd."
+   ]
+  },
+  {
+   "canonico": "Fundacio De Recerca Clinic Barcelona-Institut D'investigacions Biomediques August Pi I Sunyer",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacio De Recerca Clinic Barcelona-Institut D¿investigacions Biomediques August Pi I Sunyer"
+   ]
+  },
+  {
+   "canonico": "Grupo Espanol De Leucemia Linfocitica Cronica",
+   "tipo": "cooperativo",
+   "origen": "auto",
+   "variantes": [
+    "Grupo Espanol De Leucemia Linfocitica Cronica"
+   ]
+  },
+  {
+   "canonico": "Lysarc",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Lysarc"
+   ]
+  },
+  {
+   "canonico": "Florentine Cullinan",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Florentine Cullinan Corp."
+   ]
+  },
+  {
+   "canonico": "Fondazione Gimema Franco Mandelli Onlus",
+   "tipo": "cooperativo",
+   "origen": "auto",
+   "variantes": [
+    "Fondazione Gimema Franco Mandelli Onlus"
+   ]
+  },
+  {
+   "canonico": "Fundacion Publica Andaluza Para La Gestion De La Investigacion En Salud De Sevilla",
+   "tipo": "academico",
+   "origen": "auto",
+   "variantes": [
+    "Fundacion Publica Andaluza Para La Gestion De La Investigacion En Salud De Sevilla"
+   ]
+  },
+  {
+   "canonico": "Miltenyi Biomedicine",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Miltenyi Biomedicine GmbH"
+   ]
+  },
+  {
+   "canonico": "Cellectis",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Cellectis"
+   ]
+  },
+  {
+   "canonico": "Oncoverity",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Oncoverity Inc."
+   ]
+  },
+  {
+   "canonico": "Geron",
+   "tipo": "industria",
+   "origen": "auto",
+   "variantes": [
+    "Geron Corp."
+   ]
+  }
+ ],
+ "investigadores": [
+  {
+   "tipo": "fusion",
+   "canonico": "Elvira Mora Casterá",
+   "variantes": [
+    "Elvira Mora",
+    "Elvira Mora Castera",
+    "Elvira Mora Casterá"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Rosa María Ayala Díaz",
+   "variantes": [
+    "Rosa AYALA DIAZ",
+    "Rosa Ayala",
+    "Rosa Ayala Diaz",
+    "Rosa Ayala Díaz",
+    "Rosa Maria Ayala",
+    "Rosa María Ayala",
+    "Rosa María Ayala Díaz"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Cristina Díaz de Heredia",
+   "variantes": [
+    "Cristina Diaz-de-Heredia",
+    "Cristina Díaz",
+    "Cristina Díaz de Heredia"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Miguel Ángel Canales Albendea",
+   "variantes": [
+    "Miguel Angel Canales",
+    "Miguel Angel Canales Albendea",
+    "Miguel Canales",
+    "Miguel Canales Albendea",
+    "Miguel Ángel Canales Albendea"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-madrid",
+    "clinica-universidad-de-navarra-pamplona-iruna",
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Cristina de Barrenetxea Lekue",
+   "variantes": [
+    "Cristina Barrenetxea",
+    "Maria Cristina de Barrenetxea Lekue"
+   ],
+   "hospitales": [
+    "hospital-universitario-basurto-bilbao"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Raúl Córdoba Mascuñano",
+   "variantes": [
+    "Raul Cordoba",
+    "Raul Cordoba Mascuano",
+    "Raul Cordoba Mascunano",
+    "Raul Cordoba Mascuñano",
+    "Raul Córdoba",
+    "Raul Córdoba Mascuñano",
+    "Raúl Córdoba",
+    "Raúl Córdoba Mascuñana",
+    "Raúl Córdoba Mascuñano",
+    "Raúl Córdoba Muscuñano"
+   ],
+   "hospitales": [
+    "hospital-universitario-fundacion-jimenez-diaz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Rafael Andreu Lapiedra",
+   "variantes": [
+    "Rafael Andreu",
+    "Rafael Andreu Lapiedra"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Araceli Rubio Martínez",
+   "variantes": [
+    "Araceli Rubio",
+    "Araceli Rubio Martinez",
+    "Araceli Rubio Martínez"
+   ],
+   "hospitales": [
+    "hospital-universitario-miguel-servet-zaragoza"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Olga Benítez Hidalgo",
+   "variantes": [
+    "Olga Benitez Hidalgo",
+    "Olga Benitez-Hidalgo",
+    "Olga Benítez",
+    "Olga Benítez Hidalgo"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institut-de-recerca-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Tasso Cereceda",
+   "variantes": [
+    "María Tasso",
+    "María Tasso Cereceda"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-de-alicante-alicante-alacant",
+    "hospital-general-universitario-dr-balmis-alicante"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Carolina Fuentes Socorro",
+   "variantes": [
+    "Carolina Fuentes",
+    "Carolina Fuentes Socorro"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Agueda Molinos Quintana",
+   "variantes": [
+    "Agueda Molinos",
+    "Agueda Molinos Quintana",
+    "Águeda Molinos"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Berta González Martínez",
+   "variantes": [
+    "Berta González",
+    "Berta González Martínez"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Paula Rodríguez Otero",
+   "variantes": [
+    "Paula Rodriguez",
+    "Paula Rodriguez Otero",
+    "Paula Rodríguez",
+    "Paula Rodríguez Otero"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-madrid",
+    "clinica-universidad-de-navarra-pamplona-iruna",
+    "university-clinic-of-navarra-madrid",
+    "university-clinic-of-navarra-pamplona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Miquel Granell Gorrochategui",
+   "variantes": [
+    "Miquel Granell",
+    "Miquel Granell Gorrochategui"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Adrián Alegre Amor",
+   "variantes": [
+    "Adrian Alegre",
+    "Adrian Alegre Amor",
+    "Adrián Alegre Amor"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-la-princesa-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Joaquín Martínez López",
+   "variantes": [
+    "Joaquin Martinez",
+    "Joaquin Martinez Lopez",
+    "Joaquin Martinez López",
+    "Joaquin Martinez-Lopez",
+    "Joaquin Martínez",
+    "Joaquin Martínez López",
+    "Joaquín Martínez",
+    "Joaquín Martínez López"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Raquel de Paz Arias",
+   "variantes": [
+    "Maria Raquel de Paz Arias",
+    "Raquel De Paz",
+    "Raquel De Paz Arias",
+    "Raquel de Paz",
+    "Raquel de Paz Arias"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Carlos Grande García",
+   "variantes": [
+    "Carlos Grande",
+    "Carlos Grande Garcia",
+    "Carlos Grande García"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-madrid",
+    "clinica-universidad-de-navarra-pamplona-iruna",
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "David Valcárcel Ferreiras",
+   "variantes": [
+    "David Valcarcel",
+    "David Valcarcel Ferreiras",
+    "David Valcárcel",
+    "David Valcárcel Ferreira",
+    "David Valcárcel Ferreiras"
+   ],
+   "hospitales": [
+    "centre-sociosanitari-sant-jordi-de-la-vall-d-hebron-barcelona",
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institute-of-oncology-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Francesc Bosch Albareda",
+   "variantes": [
+    "Francesc Bosch",
+    "Francesc Bosch Albareda"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institut-de-recerca-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Adrián Segura Díaz",
+   "variantes": [
+    "Adrian Segura Diaz",
+    "Adrián Segura",
+    "Adrián Segura Díaz"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-universitario-de-gran-canaria-dr-negrin-las-palm"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Pilar Giraldo Castellano",
+   "variantes": [
+    "María Pilar Giraldo Castellano",
+    "Pilar Giraldo",
+    "Pilar Giraldo Castellano"
+   ],
+   "hospitales": [
+    "clinica-quiron-zaragoza-s-a-zaragoza",
+    "hospital-quironsalud-zaragoza-zaragoza"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Laura Fox",
+   "variantes": [
+    "Laura Fox",
+    "Maria Laura Fox",
+    "María Laura Fox"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institut-de-recerca-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "José Valentín García Gutiérrez",
+   "variantes": [
+    "Jose Garcia Gutierrez",
+    "Jose Valentin Garcia Gutierrez",
+    "José Valentín García",
+    "José Valentín García Gutierrez",
+    "José Valentín García Gutiérrez",
+    "Valentin Garcia Guiterrez",
+    "Valentin Garcia-Gutiérrez",
+    "Valentín García",
+    "Valentín García Gutierrez",
+    "Valentín García Gutiérrez",
+    "Valentín García-Gutierrez",
+    "Valentín García-Gutiérrez"
+   ],
+   "hospitales": [
+    "hospital-ramon-y-cajal-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Regina García Delgado",
+   "variantes": [
+    "Regina Garcia",
+    "Regina Garcia Delgado",
+    "Regina Garcia-Delgado",
+    "Regina García Delgado",
+    "Regina García-Delgado"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-la-victoria-malaga"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Alberto Álvarez Larrán",
+   "variantes": [
+    "Alberto Alvarez Larran",
+    "Alberto Álvarez",
+    "Alberto Álvarez Larran",
+    "Alberto Álvarez Larrán"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Pérez González",
+   "variantes": [
+    "Ana Perez Gonzalez",
+    "Ana Pérez",
+    "Ana Pérez González"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Blanca Xicoy Cirici",
+   "variantes": [
+    "Blanca Xicoy",
+    "Blanca Xicoy Cirici",
+    "blanca Xicoy Cirici"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona",
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ramon Lecumberri Villamediana",
+   "variantes": [
+    "Ramon Lecumberri",
+    "Ramon Lecumberri Villamediana"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-pamplona-iruna"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Esther González García",
+   "variantes": [
+    "Esther Gonzalez",
+    "Esther Gonzalez Garcia",
+    "Esther González",
+    "Esther González García",
+    "Maria Esther Gonzalez Garcia",
+    "Maria Esther Gonzalez García",
+    "Maria Esther González García",
+    "María Esther González",
+    "María Esther González García"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-cabuenes-gijon"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Francisco Javier de la Rubia Comos",
+   "variantes": [
+    "Francisco Javier De la Rubia Comos",
+    "Francisco Javier de la Rubia Comos",
+    "Javier De La Rubia",
+    "Javier De La Rubia Comos",
+    "Javier De la Rubia",
+    "Javier De la Rubia Comos",
+    "Javier de la Rubia",
+    "Javier de la Rubia Comos"
+   ],
+   "hospitales": [
+    "hospital-universitario-doctor-peset-valencia",
+    "hospital-universitario-dr-peset-aleixandre-valencia",
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonia Sampol Mayol",
+   "variantes": [
+    "Antonia Sampol",
+    "Antonia Sampol Mayo",
+    "Antonia Sampol Mayol"
+   ],
+   "hospitales": [
+    "university-hospital-son-espases-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Victor Manuel Jiménez Yuste",
+   "variantes": [
+    "Victor Jimenez Yuste",
+    "Victor Jiménez",
+    "Victor Jíménez",
+    "Victor Manuel Jiménez Yuste",
+    "Víctor Jiménez Yuste"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Irene García Cadenas",
+   "variantes": [
+    "Irene Garcia",
+    "Irene García Cadenas"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Arancha Bermúdez Rodríguez",
+   "variantes": [
+    "Arancha Bermudez",
+    "Arancha Bermúdez Rodríguez"
+   ],
+   "hospitales": [
+    "hospital-universitario-marques-de-valdecilla-santander"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonio Manuel Gutiérrez García",
+   "variantes": [
+    "Antonio Gutierrez Garcia",
+    "Antonio Gutiérrez",
+    "Antonio Gutiérrez García",
+    "Antonio Manuel Gutierrez Garcia",
+    "Antonio Manuel Gutiérrez García"
+   ],
+   "hospitales": [
+    "university-hospital-son-espases-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Carmen Martínez Muñoz",
+   "variantes": [
+    "Carmen Martinez",
+    "Carmen Martinez Munoz",
+    "Carmen Martínez",
+    "Carmen Martínez Muñoz"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ramón García-Sanz",
+   "variantes": [
+    "Ramon Garcia Sanz",
+    "Ramón Garcia Sanz",
+    "Ramón García",
+    "Ramón García Sanz",
+    "Ramón García-Sanz"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid",
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Mariana Beatriz Bastos Oreiro",
+   "variantes": [
+    "Mariana BASTOS OREIRO",
+    "Mariana Bastos",
+    "Mariana Bastos Oreiro",
+    "Mariana Bastos Orteiro",
+    "Mariana Bastos-Oreiro",
+    "Mariana Beatriz Bastos Oreiro"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Cecilia del Carmen Carpio Segura",
+   "variantes": [
+    "Cecilia Carpio",
+    "Cecilia Carpio Segura",
+    "Cecilia del Carmen Carpio Segura"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Javier Nuñez Céspedes",
+   "variantes": [
+    "Javier Nuñez Céspedes",
+    "Javier Núñez"
+   ],
+   "hospitales": [
+    "hospital-universitario-marques-de-valdecilla-santander"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Francisco Javier López Jiménez",
+   "variantes": [
+    "Francisco Javier Lopez",
+    "Francisco Javier Lopez Jimenez",
+    "Francisco Javier López Jiménez",
+    "Francisco Javier López-Jiménez",
+    "Javier Lopez Jimenez",
+    "Javier Lopez Jiménez",
+    "Javier López",
+    "Javier López Jimenez",
+    "Javier López Jiménez"
+   ],
+   "hospitales": [
+    "hospital-ramon-y-cajal-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Guillermo Rodríguez García",
+   "variantes": [
+    "Guillermo Rodriguez Garcia",
+    "Guillermo Rodriguez García",
+    "Guillermo Rodríguez",
+    "Guillermo Rodríguez García"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonia Rodríguez Izquierdo",
+   "variantes": [
+    "Antonia Rodriguez",
+    "Antonia Rodríguez",
+    "Antonia Rodríguez Izquierdo"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Miriam Moreno Velázquez",
+   "variantes": [
+    "Miriam Moreno",
+    "Miriam Moreno Velázquez"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Víctor Noriega Concepción",
+   "variantes": [
+    "Victor Noriega",
+    "Victor Noriega Concepcion",
+    "Victor Noriega Concepción",
+    "Víctor Noriega",
+    "Víctor Noriega Concepción"
+   ],
+   "hospitales": [
+    "complexo-hospitalario-universitario-a-coruna-coruna-a"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Adrián Mosquera Orgueira",
+   "variantes": [
+    "Adrian Mosquera",
+    "Adrian Mosquera Orgeira",
+    "Adrian Mosquera Orgueira",
+    "Adrián Mosquera",
+    "Adrián Mosquera Orgeira",
+    "Adrián Mosquera Orgueira"
+   ],
+   "hospitales": [
+    "complexo-hospitalario-universitario-de-santiago-santiago-de-compostela",
+    "universidade-de-santiago-de-compostela-santiago-de-compostela"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Javier Briones Meijide",
+   "variantes": [
+    "Javier Briones",
+    "Javier Briones Meijide"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Muntañola Prat",
+   "variantes": [
+    "Ana MUNTAÑOLA PRAT",
+    "Ana Muntañola",
+    "Ana Muntañola Prat"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona",
+    "hospital-universitari-mutua-terrassa-terrassa"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ángel Ramírez Payer",
+   "variantes": [
+    "Angel Ramirez",
+    "Angel Ramirez Payer",
+    "Ángel Ramirez Payer",
+    "Ángel Ramírez Payer"
+   ],
+   "hospitales": [
+    "hospital-universitario-central-de-asturias-oviedo"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Eva María Donato Martín",
+   "variantes": [
+    "Eva Donato",
+    "Eva María Donato Martín",
+    "Eva Mª Donato Martín"
+   ],
+   "hospitales": [
+    "hospital-universitario-dr-peset-aleixandre-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Aránzazu Alonso Alonso",
+   "variantes": [
+    "Aranzazu Alonso",
+    "Aranzazu Alonso Alonso",
+    "Aránzazu Alonso",
+    "Aránzazu Alonso Alonso",
+    "Maria Aranzazu Alonso Alonso",
+    "Maria Aránzazu Alonso Alonso",
+    "María Aranzazu Alonso Alonso"
+   ],
+   "hospitales": [
+    "hospital-quironsalud-madrid-pozuelo-de-alarcon",
+    "hospital-ruber-juan-bravo-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Eva María González Barca",
+   "variantes": [
+    "Eva Gonzalez Barca",
+    "Eva González",
+    "Eva González Barca",
+    "Eva González-Barca",
+    "Eva Maria Gonzalez Barca",
+    "Eva Maria Gonzalez-Barca",
+    "Eva Maria González Barca",
+    "Eva María González Barca",
+    "Eva María González-Barca"
+   ],
+   "hospitales": [
+    "ico-l-hospitalet-hospital-duran-i-reynals-barcelona",
+    "institut-catala-d-oncologia-badalona",
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María de Fátima de la Cruz Vicente",
+   "variantes": [
+    "Fatima De La Cruz",
+    "Fatima de la Cruz Vicente",
+    "Fátima De La Cruz Vicente",
+    "Fátima De la Cruz Vicente",
+    "Fátima de la Cruz",
+    "Fátima de la Cruz Vicente",
+    "María de Fátima de la Cruz Vicente"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Elena Cela de Julian",
+   "variantes": [
+    "Elena Cela",
+    "Elena Cela de Julian"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "David Beneitez Pastor",
+   "variantes": [
+    "David Beneitez",
+    "David Beneitez Pastor"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institut-de-recerca-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Marta Morado Arias",
+   "variantes": [
+    "Marta Morado",
+    "Marta Morado Arias"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Inés Hernández Rodríguez",
+   "variantes": [
+    "Ines Hernández",
+    "Inés Hernández Rodríguez"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Salvador Payan Pernia",
+   "variantes": [
+    "Salvador Payan Pernia",
+    "Salvador Payán"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Díez Campelo",
+   "variantes": [
+    "Maria Diez",
+    "Maria Diez Campelo",
+    "María Diez Campelo",
+    "María Diez-Campelo",
+    "María Díez Campelo"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Teresa Arquero Portero",
+   "variantes": [
+    "Teresa Arquero",
+    "Teresa Arquero Portero"
+   ],
+   "hospitales": [
+    "hospital-universitario-fundacion-jimenez-diaz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Montserrat Arnán Sangermán",
+   "variantes": [
+    "Montserrat Arnan",
+    "Montserrat Arnan Sangerman",
+    "Montserrat Arnán",
+    "Montserrat Arnán Sangermán"
+   ],
+   "hospitales": [
+    "bellvitge-university-hospital-l-hospitalet-de-llobregat",
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Triguero Moreno",
+   "variantes": [
+    "Ana Triguero",
+    "Ana Triguero Moreno"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Santiago Osorio Prendes",
+   "variantes": [
+    "Santiago Osorio",
+    "Santiago Osorio Predes",
+    "Santiago Osorio Prendes"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Alfonso Piérola",
+   "variantes": [
+    "Ana Alfonso",
+    "Ana Alfonso Pierola",
+    "Ana Alfonso Piérola"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-madrid",
+    "clinica-universidad-de-navarra-pamplona-iruna",
+    "university-clinic-of-navarra-pamplona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María del Mar Tormo Díaz",
+   "variantes": [
+    "Mar Tormo",
+    "Maria del Mar TORMO DIAZ",
+    "Maria del Mar Tormo",
+    "Maria del Mar Tormo Diaz",
+    "Maria del Mar Tormo Díaz",
+    "María del Mar Tormo Diaz",
+    "María del Mar Tormo Díaz",
+    "Mª del Mar Tormo Diaz"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-de-valencia-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gabriela Rodríguez Macías",
+   "variantes": [
+    "Gabriela Rodriguez",
+    "Gabriela Rodríguez Macias",
+    "Gabriela Rodríguez Macías"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pilar Herrera Puente",
+   "variantes": [
+    "Pilar Herrera",
+    "Pilar Herrera Puente"
+   ],
+   "hospitales": [
+    "hospital-ramon-y-cajal-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Adolfo de la Fuente Burguera",
+   "variantes": [
+    "Adolfo De La Fuente",
+    "Adolfo De La Fuente Burguera",
+    "Adolfo De la Fuente",
+    "Adolfo De la Fuente Burguera",
+    "Adolfo de la Fuente",
+    "Adolfo de la Fuente Burguera"
+   ],
+   "hospitales": [
+    "centro-oncologico-md-anderson-international-espana-madrid",
+    "hospital-md-anderson-cancer-center-madrid-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Eduardo Rodríguez Arbolí",
+   "variantes": [
+    "Eduardo RODRIGUEZ ARBOLI",
+    "Eduardo Rodriguez",
+    "Eduardo Rodriguez Arboli",
+    "Eduardo Rodríguez",
+    "Eduardo Rodríguez Arbolí"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "José Luis Sastre Moral",
+   "variantes": [
+    "Jose Luis Sastre Moral",
+    "José Luis Sastre Moral",
+    "José Sastre"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-universitario-de-ourense-ourense"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Teresa Bernal Castillo",
+   "variantes": [
+    "Maria Teresa Bernal Del Castillo",
+    "María Teresa Bernal Castillo",
+    "Teresa Bernal",
+    "Teresa Bernal del Castillo"
+   ],
+   "hospitales": [
+    "hospital-universitario-central-de-asturias-oviedo"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pau Montesinos Fernández",
+   "variantes": [
+    "Pau MONTESINOS FERNANDEZ",
+    "Pau Montesinos",
+    "Pau Montesinos Fernandez",
+    "Pau Montesinos Fernández"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Lucas Moreno Martín Retortillo",
+   "variantes": [
+    "Lucas Moreno",
+    "Lucas Moreno Martín Retortillo"
+   ],
+   "hospitales": [
+    "hospital-infantil-universitario-nino-jesus-madrid",
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Josefina SERRANO LOPEZ",
+   "variantes": [
+    "Josefina SERRANO LOPEZ",
+    "Josefina Serrano",
+    "Josefina Serrano Lopez"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-regional-reina-sofia-cordoba"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Belén Vidriales Vicente",
+   "variantes": [
+    "Belén Vidriales",
+    "Maria Belen Vidriales Vicente",
+    "Maria Belén Vidriales Vicente",
+    "María Belén Vidriales",
+    "María Belén Vidriales Vicente"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Irene Sanchez Vadillo",
+   "variantes": [
+    "Irene Sanchez Vadillo",
+    "Irene Sanchez Vadilo",
+    "Irene Sanchez Vandillo",
+    "Irene Sánchez"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Mercedes Colorado Araujo",
+   "variantes": [
+    "Mercedes Colorado",
+    "Mercedes Colorado Araujo"
+   ],
+   "hospitales": [
+    "hospital-universitario-marques-de-valdecilla-santander"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Belen Calbacho Robles",
+   "variantes": [
+    "Maria Belen Calbacho Robles",
+    "Maria Calbacho",
+    "Maria Calbacho Robles",
+    "María Calbacho Robles"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pablo Abrisqueta Costa",
+   "variantes": [
+    "Pablo Abrisqueta",
+    "Pablo Abrisqueta Costa"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Alejandro Martín García-Sancho",
+   "variantes": [
+    "Alejandro MARTÍN GARCÍA-SANCHO",
+    "Alejandro Martin",
+    "Alejandro Martin Garcia Sancho",
+    "Alejandro Martin Garcia-Sancho",
+    "Alejandro Martin Garcia-sancho",
+    "Alejandro Martin García Sancho",
+    "Alejandro Martin García-Sancho",
+    "Alejandro Martin Martín García-Sancho",
+    "Alejandro Martín",
+    "Alejandro Martín García- Sancho",
+    "Alejandro Martín García-Sacho",
+    "Alejandro Martín García-Sancho"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonio Rueda Domínguez",
+   "variantes": [
+    "Antonio Rueda",
+    "Antonio Rueda Domingez",
+    "Antonio Rueda Dominguez",
+    "Antonio Rueda Domínguez"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-la-victoria-malaga"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Julio Delgado González",
+   "variantes": [
+    "Julio Delgado",
+    "Julio Delgado Gonzalez",
+    "Julio Delgado González"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Eva Gimeno Vazquez",
+   "variantes": [
+    "Eva Gimeno",
+    "Eva Gimeno Vazquez"
+   ],
+   "hospitales": [
+    "hospital-del-mar-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Javier Loscertales Pueyo",
+   "variantes": [
+    "Javier Loscertales",
+    "Javier Loscertales Pueyo"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-la-princesa-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Lucrecia Yáñez San Segundo",
+   "variantes": [
+    "Lucrecia Yanez",
+    "Lucrecia Yanez San Segundo",
+    "Lucrecia Yañez",
+    "Lucrecia Yañez San Segundo",
+    "Lucrecia Yáñez",
+    "Lucrecia Yáñez San Segundo"
+   ],
+   "hospitales": [
+    "hospital-universitario-marques-de-valdecilla-santander"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Sebastián Garzón López",
+   "variantes": [
+    "Sebastian Garzon",
+    "Sebastian Garzon Lopez",
+    "Sebastian Garzón",
+    "Sebastian Garzón López",
+    "Sebastián Garzón",
+    "Sebastián Garzón López"
+   ],
+   "hospitales": [
+    "hospital-de-jerez-de-la-frontera-jerez-de-la-frontera"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Albert Oriol Rocafiguera",
+   "variantes": [
+    "Albert Oriol",
+    "Albert Oriol Rocafiguera",
+    "Albert Oriol Rocafigueroa",
+    "Albert Oriol-Rocafiguera"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona",
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Valentín Cabañas Perianes",
+   "variantes": [
+    "Cabanas-Perianes Valentin",
+    "Valentin Cabañas",
+    "Valentin Cabañas Perianes",
+    "Valentín Cabañas",
+    "Valentín Cabañas Perianes"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-virgen-de-la-arrixaca-murcia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pascual Fernández Abellán",
+   "variantes": [
+    "Pascual Fernández",
+    "Pascual Fernández Abellán"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-de-alicante-alicante-alacant",
+    "hospital-general-universitario-dr-balmis-alicante"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana María Sureda Balari",
+   "variantes": [
+    "Ana Maria Sureda Balari",
+    "Ana María Sureda Balari",
+    "Ana Sureda",
+    "Ana Sureda Baladi",
+    "Ana Sureda Balari"
+   ],
+   "hospitales": [
+    "ico-l-hospitalet-hospital-duran-i-reynals-barcelona",
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Olga Salamero García",
+   "variantes": [
+    "Olga Salamero",
+    "Olga Salamero Garcia",
+    "Olga Salamero García"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institut-de-recerca-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Laura Rosiñol Dachs",
+   "variantes": [
+    "Laura Rosinol",
+    "Laura Rosinol Dachs",
+    "Laura Rosiñol",
+    "Laura Rosiñol Dachs",
+    "Laura Rosiñol Dacsh"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Estrella Carrillo Cruz",
+   "variantes": [
+    "Estrella Carrillo",
+    "Estrella Carrillo Cruz"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Anna María Sureda Balari",
+   "variantes": [
+    "Anna María Sureda",
+    "Anna María Sureda Balari",
+    "Anna Sureda",
+    "Anna Sureda Baladi",
+    "Anna Sureda Balari",
+    "Anna Sureda Balarí"
+   ],
+   "hospitales": [
+    "ico-l-hospitalet-hospital-duran-i-reynals-barcelona",
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Anabelle Chinea Rodríguez",
+   "variantes": [
+    "Anabelle Chinea",
+    "Anabelle Chinea Rodríguez"
+   ],
+   "hospitales": [
+    "hospital-ramon-y-cajal-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Carlos Rodríguez Medina",
+   "variantes": [
+    "Carlos Rodriguez Medin",
+    "Carlos Rodriguez Medina",
+    "Carlos Rodriguez-Medina",
+    "Carlos Rodríguez",
+    "Carlos Rodríguez Medina",
+    "Carlos Rodríguez-Medina"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-universitario-de-gran-canaria-dr-negrin-las-palm"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Susana Vives Polo",
+   "variantes": [
+    "Susana Vives",
+    "Susana Vives Polo"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona",
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Guillermo Orti Pascual",
+   "variantes": [
+    "Guillermo Orti",
+    "Guillermo Orti Pascual",
+    "Guillermo Ortí"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Rafael Francisco Duarte Palomino",
+   "variantes": [
+    "Rafael Duarte",
+    "Rafael Francisco Duarte Palomino"
+   ],
+   "hospitales": [
+    "hospital-universitario-puerta-de-hierro-de-majadahonda-majadahonda"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Jaime Sanz Caballer",
+   "variantes": [
+    "Jaime Caballer Sanz",
+    "Jaime Sanz",
+    "Jaime Sanz Caballer"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Jordi López Pardo",
+   "variantes": [
+    "Jordi Lopez",
+    "Jordi Lopez Pardo",
+    "Jordi López Pardo"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Fernando Escalante Barrigón",
+   "variantes": [
+    "Fernando Escalante",
+    "Fernando Escalante Barrigon",
+    "Fernando Escalante Barrigón"
+   ],
+   "hospitales": [
+    "area-de-salud-de-leon-y-el-bierzo-leon",
+    "hospital-de-leon-complejo-asistencial-universitario-de-leon-leon"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Paz Ribas García",
+   "variantes": [
+    "Maria Paz Ribas",
+    "Paz Ribas",
+    "Paz Ribas Garcia",
+    "Paz Ribas García"
+   ],
+   "hospitales": [
+    "hospital-universitario-dr-peset-aleixandre-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Jordi Esteve Reyner",
+   "variantes": [
+    "JORDI Esteve Reyner",
+    "Jordi Esteve",
+    "Jordi Esteve Reiner",
+    "Jordi Esteve Reyner"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Garrido Díaz",
+   "variantes": [
+    "Ana Garrido",
+    "Ana Garrido Diaz",
+    "Ana Garrido Díaz"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Sara García Ávila",
+   "variantes": [
+    "Sara Garcia",
+    "Sara Garcia Avila",
+    "Sara García Ávila"
+   ],
+   "hospitales": [
+    "hospital-del-mar-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonia Cladera Serra",
+   "variantes": [
+    "Antonia Cladera",
+    "Antonia Cladera Serra"
+   ],
+   "hospitales": [
+    "hospital-son-llatzer-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonio García Guiñón",
+   "variantes": [
+    "Antonio GARCIA GUIÑÓN",
+    "Antonio Garcia",
+    "Antonio García",
+    "Antonio García Guiñón"
+   ],
+   "hospitales": [
+    "hospital-universitari-arnau-de-vilanova-de-la-gerencia-territorial-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Rosa Coll Jorda",
+   "variantes": [
+    "Rosa Coll",
+    "Rosa Coll Jorda"
+   ],
+   "hospitales": [
+    "hospital-universitari-de-girona-dr-josep-trueta-girona",
+    "institut-catala-d-oncologia-girona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Rubén Berrueco Moreno",
+   "variantes": [
+    "Ruben Berrueco",
+    "Ruben Berrueco Moreno",
+    "Rubén Berrueco",
+    "Rubén Berrueco Moreno"
+   ],
+   "hospitales": [
+    "hospital-de-sant-joan-de-deu-esplugues-de-llobregat"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Aranzazu Bermúdez Rodríguez",
+   "variantes": [
+    "Aranzazu Bermudez",
+    "M Aranzazu Bermúdez Rodríguez",
+    "Maria Aranzazu Bermudez Rodriguez",
+    "Maria Aranzazu Bermúdez Rodríguez",
+    "María Aranzazu Bermúdez",
+    "María Aranzazu Bermúdez Rodríguez"
+   ],
+   "hospitales": [
+    "hospital-universitario-marques-de-valdecilla-santander"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Sara Villar Fernández",
+   "variantes": [
+    "Sara Villar",
+    "Sara Villar Fernandez",
+    "Sara Villar Fernández"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-madrid",
+    "clinica-universidad-de-navarra-pamplona-iruna"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonio Pérez Martínez",
+   "variantes": [
+    "Antonio Perez Martinez",
+    "Antonio Pérez",
+    "Antonio Pérez Martínez"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gladys Ibarra Fernández",
+   "variantes": [
+    "Gladys Ibarra",
+    "Gladys Ibarra Fernandez",
+    "Gladys Ibarra Fernández"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona",
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ignacio Casas Avilés",
+   "variantes": [
+    "Ignacio Casas",
+    "Ignacio Casas Aviles",
+    "Ignacio Casas Avilés",
+    "Ignacio Casas-Aviles"
+   ],
+   "hospitales": [
+    "hospital-san-pedro-de-alcantara-caceres"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Mercedes Gironella Mesa",
+   "variantes": [
+    "Mercedes Gironella",
+    "Mercedes Gironella Mesa"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Enrique María Ocio San Miguel",
+   "variantes": [
+    "Enrique Maria Ocio San Miguel",
+    "Enrique María Ocio San Miguel",
+    "Enrique Ocio",
+    "Enrique Ocio San Miguel"
+   ],
+   "hospitales": [
+    "hospital-universitario-marques-de-valdecilla-santander"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Carolina Moreno Atanasio",
+   "variantes": [
+    "Carolina Moreno",
+    "Carolina Moreno Atanasio"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Xabier Gutiérrez López de Ocáriz",
+   "variantes": [
+    "Xabier Gutierrez Lopez de Ocariz",
+    "Xabier Gutierrez López de Ocariz",
+    "Xabier Gutiérrez",
+    "Xabier Gutiérrez López de Ocáriz"
+   ],
+   "hospitales": [
+    "hospital-universitario-araba-sede-txagorritxu-vitoria-gasteiz",
+    "hospital-universitario-araba-vitoria"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Sabela Bobillo Varela",
+   "variantes": [
+    "Sabela Bobillo",
+    "Sabela Bobillo Varela"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pablo Javier Mozas Fernández",
+   "variantes": [
+    "Pablo Javier Mozas Fernandez",
+    "Pablo Javier Mozas Fernández",
+    "Pablo Mozas",
+    "Pablo Mozas Fernández"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Irene Braña García",
+   "variantes": [
+    "Irene Braña",
+    "Irene Braña García"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Blanca Boluda Pascual",
+   "variantes": [
+    "Blanca Boluda",
+    "Blanca Boluda Pascual"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Belén Navarro Matilla",
+   "variantes": [
+    "Belén Navarro",
+    "Belén Navarro Matilla",
+    "Maria BELÉN NAVARRO",
+    "Maria Belen Navarro Matilla",
+    "María Belén Navarro Matilla"
+   ],
+   "hospitales": [
+    "hospital-universitario-puerta-de-hierro-de-majadahonda-majadahonda"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "José Manuel Puerta Puerta",
+   "variantes": [
+    "Jose Manuel Puerta",
+    "Jose Manuel Puerta Puerta",
+    "José Manuel Puerta Puerta",
+    "José Puerta Puerta"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-las-nieves-granada"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Juan Manuel Sancho Cía",
+   "variantes": [
+    "Juan Manuel Sancho",
+    "Juan Manuel Sancho Cia",
+    "Juan Manuel Sancho Cía",
+    "Juan Sancho",
+    "Juan Sancho Cia"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona",
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Daniel Morillo Giles",
+   "variantes": [
+    "Daniel Morillo",
+    "Daniel Morillo Giles"
+   ],
+   "hospitales": [
+    "hospital-universitario-fundacion-jimenez-diaz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Cristina Encinas Rodríguez",
+   "variantes": [
+    "Cristina Encinas",
+    "Cristina Encinas Rodriguez",
+    "Cristina Encinas Rodríguez"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Armando Mena Duran",
+   "variantes": [
+    "Armando Mena",
+    "Armando Mena Duran"
+   ],
+   "hospitales": [
+    "consorcio-hospital-general-universitario-de-valencia-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Jorge Labrador Gómez",
+   "variantes": [
+    "Jorge Labrador",
+    "Jorge Labrador Gomez",
+    "Jorge Labrador Gómez"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-burgos-burgos",
+    "hospital-universitario-de-burgos-complejo-asistencial-univer-de-burgos"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Amaia Balerdi Malcorra",
+   "variantes": [
+    "Amaia Balerdi",
+    "Amaia Balerdi Malcorra"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-cruces-barakaldo"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Aitor Abuin Blanco",
+   "variantes": [
+    "Aitor Abuin Blanco",
+    "Aitor Abuín"
+   ],
+   "hospitales": [
+    "hospital-universitario-lucus-augusti-lugo"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Alejandro Luis Contento Gonzalo",
+   "variantes": [
+    "Alejandro Contento",
+    "Alejandro Contento Gonzalo",
+    "Alejandro Luis Contento Gonzalo"
+   ],
+   "hospitales": [
+    "hospital-materno-infantil-de-malaga-hospital-regional-universitario-de"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Eva Giné Soca",
+   "variantes": [
+    "Eva Gine",
+    "Eva Gine Soca",
+    "Eva Giné",
+    "Eva Giné Soca"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Marín Niebla",
+   "variantes": [
+    "Ana Marin Niebla",
+    "Ana Marin-Niebla",
+    "Ana Marín",
+    "Ana Marín Niebla",
+    "Ana-Marin Niebla"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona",
+    "vall-d-hebron-institute-of-research-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gonzalo Carreño Gómez-Tarragona",
+   "variantes": [
+    "Gonzalo Carreño",
+    "Gonzalo Carreño Gomez- Tarragona",
+    "Gonzalo Carreño Gómez-Tarragona"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pau Abrisqueta Costa",
+   "variantes": [
+    "Pau Abrisqueta",
+    "Pau Abrisqueta Acosta",
+    "Pau Abrisqueta Costa",
+    "Pau Abrisqueta costa"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Guadalupe Oñate Hospital",
+   "variantes": [
+    "Guadalupe Onate",
+    "Guadalupe Oñate",
+    "Guadalupe Oñate Hospital"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "José Juan Rifón Roca",
+   "variantes": [
+    "Jose Rifon",
+    "José Juan Rifón",
+    "José Juan Rifón Roca",
+    "José Rifón Roca"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-pamplona-iruna"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Dolores Caballero Barrigon",
+   "variantes": [
+    "Dolores Caballero",
+    "Maria Dolores Caballero Barrigon"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Liz Paciello Coronel",
+   "variantes": [
+    "Maria Liz Paciello",
+    "Maria Liz Paciello Coronel",
+    "Maria Paciello"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Francisco Javier De La Serna Torroba",
+   "variantes": [
+    "Francisco Javier De La Serna Torroba",
+    "Javier De la Serna",
+    "Javier de La Serna",
+    "Javier de la Serna",
+    "Javier de la Serna Torroba"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Pere Barba Suñol",
+   "variantes": [
+    "Pere Barba",
+    "Pere Barba Suñol"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Enriqueta Felip Font",
+   "variantes": [
+    "Enriqueta Felip",
+    "Enriqueta Felip Font"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Carmen Botella Prieto",
+   "variantes": [
+    "Carmen BOTELLA PRIETO",
+    "Carmen Botella",
+    "Carmen Botella Prieto"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-dr-balmis-alicante"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Angeles Medina Perez",
+   "variantes": [
+    "Angeles Medina",
+    "Angeles Medina Perez",
+    "Maria Angeles Medina Perez",
+    "Ángeles Medina Pérez"
+   ],
+   "hospitales": [
+    "hospital-costa-del-sol-marbella"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Alicia Rodriguez Fernandez",
+   "variantes": [
+    "Alicia Rodriguez",
+    "Alicia Rodriguez Fernandez"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-la-macarena-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Marta Juliá Arenas",
+   "variantes": [
+    "Marta Julia",
+    "Marta Juliá Arenas"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Carla Oliveira Ramos",
+   "variantes": [
+    "Ana Carla De Oliveira Ramos",
+    "Ana Carla Oliveira Ramos",
+    "Ana Carla de Oliveira Ramos",
+    "Ana Oliveira"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Alexia Teresa Suárez Cabrera",
+   "variantes": [
+    "Alexia Suarez Cabrera",
+    "Alexia Suárez",
+    "Alexia Suárez Cabrera",
+    "Alexia Teresa Suarez Cabrera",
+    "Alexia Teresa Suárez Cabrera"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-universitario-de-gran-canaria-dr-negrin-las-palm"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Maria Teresa Olave Rubio",
+   "variantes": [
+    "Maria Teresa Olave Rubio",
+    "Teresa Olave",
+    "Teresa Olave Rubio"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-lozano-blesa-zaragoza"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Esther Clavero Sánchez",
+   "variantes": [
+    "Esther Clavero",
+    "Esther Clavero Sanchez",
+    "Maria Esther Clavero",
+    "Maria Esther Clavero Sánchez",
+    "María Esther Clavero Sánchez"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-las-nieves-granada"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Eduardo Ríos Herranz",
+   "variantes": [
+    "Eduardo Rios",
+    "Eduardo Rios Herranz",
+    "Eduardo Ríos",
+    "Eduardo Ríos Herranz"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-valme-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Raúl Pérez López",
+   "variantes": [
+    "Raul Perez Lopez",
+    "Raul Perez López",
+    "Raùl Perez Lopez",
+    "Raúl Perez",
+    "Raúl Pérez Lopez",
+    "Raúl Pérez López"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-virgen-de-la-arrixaca-murcia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Felipe de Arriba de la Fuente",
+   "variantes": [
+    "Felipe Arriba de la Fuente",
+    "Felipe De Arriba",
+    "Felipe De Arriba De la Fuente",
+    "Felipe De Arriba de la Fuente",
+    "Felipe de Arriba",
+    "Felipe de Arriba de la Fuente"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-morales-meseguer-murcia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Laura Abril Sabater",
+   "variantes": [
+    "Laura Abril",
+    "Laura Abril Sabater"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Yolanda González Montes",
+   "variantes": [
+    "Yolanda Gonzalez Montes",
+    "Yolanda González",
+    "Yolanda González Montes"
+   ],
+   "hospitales": [
+    "hospital-universitari-de-girona-doctor-josep-trueta-girona",
+    "hospital-universitari-de-girona-dr-josep-trueta-girona",
+    "institut-catala-d-oncologia-girona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Marcos González Díaz",
+   "variantes": [
+    "Marcos Gonzalez Diaz",
+    "Marcos González",
+    "Marcos González Díaz"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Tycho Stephan Baumann",
+   "variantes": [
+    "Tycho Baumann",
+    "Tycho Stephan BAUMANN",
+    "Tycho Stephan Baumann"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona",
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Isabel Benito",
+   "variantes": [
+    "Ana Benito",
+    "Ana Isabel Benito"
+   ],
+   "hospitales": [
+    "hospital-infantil-universitario-nino-jesus-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Laia Ferrés Ramis",
+   "variantes": [
+    "Laia Ferrés",
+    "Laia Ferrés Ramis"
+   ],
+   "hospitales": [
+    "university-hospital-son-espases-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Serafin Morales Murillo",
+   "variantes": [
+    "Serafin Morales Murillo",
+    "Serafín Morales"
+   ],
+   "hospitales": [
+    "hospital-universitari-arnau-de-vilanova-de-la-gerencia-territorial-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Anna Gaya Valls",
+   "variantes": [
+    "Anna Gaya",
+    "Anna Gaya Valls"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Magdalena Sierra Pacho",
+   "variantes": [
+    "Magdalena Sierra",
+    "Magdalena Sierra Pacho"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Joan Cid Vidal",
+   "variantes": [
+    "Joan Cid",
+    "Joan Cid Vidal"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Alonso Piérola",
+   "variantes": [
+    "Ana Alonso",
+    "Ana Alonso Piérola"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-pamplona-iruna"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gala Vega Achabal",
+   "variantes": [
+    "Gala Vega",
+    "Gala Vega Achabal"
+   ],
+   "hospitales": [
+    "hospital-universitario-fundacion-jimenez-diaz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Alfonso Ortiz Algarra",
+   "variantes": [
+    "Alfonso Ortiz",
+    "Alfonso Ortiz Algarra"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-de-valencia-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Ana Isabel Jiménez Ubieto",
+   "variantes": [
+    "Ana Isabel Jimenez Ubieto",
+    "Ana Isabel Jiménez Ubieto",
+    "Ana JIMÉNEZ UBIETO",
+    "Ana Jimenez",
+    "Ana Jimenez Ubieto",
+    "Ana Jiménez",
+    "Ana Jiménez Ubieto"
+   ],
+   "hospitales": [
+    "hospital-universitario-12-de-octubre-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Casanova Espinosa",
+   "variantes": [
+    "Maria Casanova",
+    "María CASANOVA ESPINOSA",
+    "María Casanova",
+    "María Casanova Espinosa"
+   ],
+   "hospitales": [
+    "hospital-costa-del-sol-marbella"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Joaquín Sánchez García",
+   "variantes": [
+    "Joaquin Sánchez",
+    "Joaquin Sánchez Gutiérrez",
+    "Joaquín Sánchez",
+    "Joaquín Sánchez García"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-regional-reina-sofia-cordoba"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Lucía López Corral",
+   "variantes": [
+    "Lucia Lopez",
+    "Lucía López Corral"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Jaime Verdú Amorós",
+   "variantes": [
+    "Jaime Verdú",
+    "Jaime Verdú Amorós"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-de-valencia-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Teresa de Soto Alvarez",
+   "variantes": [
+    "Teresa De Soto",
+    "Teresa de Soto Alvarez"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "María Esperanza Lavilla Rubira",
+   "variantes": [
+    "Esperanza Lavilla",
+    "Esperanza Lavilla Rubira",
+    "Maria Esperanza Lavilla Rubira",
+    "María Esperanza Lavilla Rubira"
+   ],
+   "hospitales": [
+    "hospital-universitario-lucus-augusti-lugo"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonio Molinés Honrubia",
+   "variantes": [
+    "Antonio Molinés",
+    "Antonio Molinés Honrubia"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-universitario-insular-materno-infantil-las-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Joan Bargay Lleonart",
+   "variantes": [
+    "Joan Bargay",
+    "Joan Bargay Lleonart"
+   ],
+   "hospitales": [
+    "hospital-son-llatzer-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gloria Inés Lacoboni Garcia Calvo",
+   "variantes": [
+    "Gloria Inés Lacoboni Garcia Calvo",
+    "Gloria LACOBONI"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Raquel del Campo García",
+   "variantes": [
+    "Raquel Del Campo",
+    "Raquel del Campo García"
+   ],
+   "hospitales": [
+    "hospital-son-llatzer-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Izaskun Zeberio Etxetxipia",
+   "variantes": [
+    "Izaskun Zeberio",
+    "Izaskun Zeberio Etxetxipia"
+   ],
+   "hospitales": [
+    "hospital-universitario-donostia-donostia-san-sebastian"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gloria Inés Iacoboni García-Calvo",
+   "variantes": [
+    "Gloria Iacoboni",
+    "Gloria Iacoboni Garcia-Calvo",
+    "Gloria Ines Iacoboni Garcia-Calvo",
+    "Gloria Inés Iacoboni García-Calvo"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Christelle Ferra Coll",
+   "variantes": [
+    "Christelle Ferra",
+    "Christelle Ferra Coll",
+    "Christelle Ferrà"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona",
+    "institut-catala-d-oncologia-badalona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Silvana Ana Rina Novelli Canales",
+   "variantes": [
+    "Silvana Ana Rina Novelli Canales",
+    "Silvana Novelli",
+    "Silvana Novelli Canales"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Santiago Mercadal Vilchez",
+   "variantes": [
+    "Santiago Mercadal",
+    "Santiago Mercadal Vilchez"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Antonia Pascual Martinez",
+   "variantes": [
+    "Antonia Pascual",
+    "Antonia Pascual Martinez"
+   ],
+   "hospitales": [
+    "hospital-materno-infantil-de-malaga-hospital-regional-universitario-de"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Anna Angona Figueras",
+   "variantes": [
+    "Anna Angona",
+    "Anna Angona Figueras"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-girona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Laura Carola Magnano Mayer",
+   "variantes": [
+    "Laura Carola Magnano Mayer",
+    "Laura Magnano",
+    "Laura Magnano Mayer"
+   ],
+   "hospitales": [
+    "hospital-clinic-de-barcelona-barcelona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Luis Ramón Palomera Bernal",
+   "variantes": [
+    "Luis Palomera",
+    "Luis Palomera Bernal",
+    "Luis Ramón Palomera Bernal"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-lozano-blesa-zaragoza"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Guillermo Sanz Santillana",
+   "variantes": [
+    "Guillermo Sanz",
+    "Guillermo Sanz Santillana"
+   ],
+   "hospitales": [
+    "hospital-universitario-y-politecnico-la-fe-valencia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Francisca María Hernandez Mohedo",
+   "variantes": [
+    "Francisca Hernandez",
+    "Francisca Hernandez Mohedo",
+    "Francisca Hernández",
+    "Francisca Hernández Mohedo",
+    "Francisca María Hernandez Mohedo"
+   ],
+   "hospitales": [
+    "hospital-universitario-virgen-de-las-nieves-granada"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gemma Moreno Jimenez",
+   "variantes": [
+    "Gemma Moreno",
+    "Gemma Moreno Jimenez"
+   ],
+   "hospitales": [
+    "hospital-ramon-y-cajal-madrid"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Montserrat Cortés Sansa",
+   "variantes": [
+    "Montserrat Cortés",
+    "Montserrat Cortés Sansa"
+   ],
+   "hospitales": [
+    "althaia-xarxa-assistencial-universitaria-de-manresa-fundacio-privada-m"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Aránzazu García Mateo",
+   "variantes": [
+    "Aranzazu García Mateos",
+    "Aránzazu García",
+    "Aránzazu García Mateo"
+   ],
+   "hospitales": [
+    "hospital-general-de-segovia-segovia"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Marta Romera Martínez",
+   "variantes": [
+    "Marta Romera",
+    "Marta Romera Martínez"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-santa-lucia-cartagena"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Josep Sarrá Escarré",
+   "variantes": [
+    "Josep Sarrá",
+    "Josep Sarrá Escarré"
+   ],
+   "hospitales": [
+    "hospital-universitari-joan-xxiii-de-tarragona-tarragona"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Leyre Bento de Miguel",
+   "variantes": [
+    "Leyre Bento",
+    "Leyre Bento de Miguel"
+   ],
+   "hospitales": [
+    "university-hospital-son-espases-palma"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Gillermo Rodríguez García",
+   "variantes": [
+    "Gillermo Rodríguez",
+    "Gillermo Rodríguez García"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "fusion",
+   "canonico": "Jose Ignacio Espanol Morales",
+   "variantes": [
+    "Ignacio Español",
+    "Jose Ignacio Espanol Morales"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-virgen-de-la-arrixaca-murcia"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Francesc Bosch Albareda",
+   "variantes": [
+    "Francesc Bosch Albareda",
+    "Francisco Bosch Albareda"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Pau Abrisqueta Costa",
+   "variantes": [
+    "Pau Abrisqueta Costa",
+    "Paul Abrisqueta Costa"
+   ],
+   "hospitales": [
+    "hospital-universitari-vall-d-hebron-barcelona"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Ana Alfonso Piérola",
+   "variantes": [
+    "Ana Alfonso Piérola",
+    "Ana Alonso Piérola"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-pamplona-iruna"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Jesús Fernando Sanmiguel Izquierdo",
+   "variantes": [
+    "Jesús Fernando Sanmiguel Izquierdo",
+    "Jesús San Miguel Izquierdo"
+   ],
+   "hospitales": [
+    "clinica-universidad-de-navarra-pamplona-iruna"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Jesús M Hernández Rivas",
+   "variantes": [
+    "Jesús M Hernández Rivas",
+    "Jesús María Hernández Rivas"
+   ],
+   "hospitales": [
+    "hospital-universitario-de-salamanca-salamanca"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Monserrat Arnan Sangerman",
+   "variantes": [
+    "Monserrat Arnan Sangerman",
+    "Montserrat Arnán Sangermán"
+   ],
+   "hospitales": [
+    "institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de-"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Jose L. Fuster",
+   "variantes": [
+    "Jose L. Fuster",
+    "Jose Luis Fuster Soler"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-virgen-de-la-arrixaca-murcia"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Jose M Moraleda",
+   "variantes": [
+    "Jose M Moraleda",
+    "Jose Maria Moraleda"
+   ],
+   "hospitales": [
+    "hospital-clinico-universitario-virgen-de-la-arrixaca-murcia"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Cristina Encimas Rodriguez",
+   "variantes": [
+    "Cristina Encimas Rodriguez",
+    "Cristina Encinas Rodríguez"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Gabriela Rodríguez Macías",
+   "variantes": [
+    "Gabriela Rodríguez Macías",
+    "Gabriella Rodriguez Macias"
+   ],
+   "hospitales": [
+    "hospital-general-universitario-gregorio-maranon-madrid"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Antonio Manuel Guitiérrez García",
+   "variantes": [
+    "Antonio Manuel Guitiérrez García",
+    "Antonio Manuel Gutiérrez García"
+   ],
+   "hospitales": [
+    "university-hospital-son-espases-palma"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Jose María Pérez Hurtado de Mendoza",
+   "variantes": [
+    "Jose María Pérez Hurtado de Mendoza",
+    "José Antonio Pérez Simón"
+   ],
+   "hospitales": [
+    "hospital-virgen-del-rocio-sevilla"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Maria Raquel de Paz Arias",
+   "variantes": [
+    "Maria Raquel de Paz Arias",
+    "Marta Morado Arias"
+   ],
+   "hospitales": [
+    "hospital-universitario-la-paz-madrid"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Jordi Sierra",
+   "variantes": [
+    "Jordi Sierra",
+    "Jorge Sierra"
+   ],
+   "hospitales": [
+    "hospital-de-la-santa-creu-i-sant-pau-barcelona"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Ferran VALL-LLOVERO CALMET",
+   "variantes": [
+    "Ferran VALL-LLOVERO CALMET",
+    "Ferrán Vall-Llobera Calmet"
+   ],
+   "hospitales": [
+    "hospital-universitari-mutua-terrassa-terrassa"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Ferran VALL-LLOVERO CALMET",
+   "variantes": [
+    "Ferran VALL-LLOVERO CALMET",
+    "Ferrán Vall-Llovera Calmet"
+   ],
+   "hospitales": [
+    "hospital-universitari-mutua-terrassa-terrassa"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Ferrán Vall-Llobera Calmet",
+   "variantes": [
+    "Ferrán Vall-Llobera Calmet",
+    "Ferrán Vall-Llovera Calmet"
+   ],
+   "hospitales": [
+    "hospital-universitari-mutua-terrassa-terrassa"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Ignacio Casa Avilés",
+   "variantes": [
+    "Ignacio Casa Avilés",
+    "Ignacio Casas Avilés"
+   ],
+   "hospitales": [
+    "hospital-san-pedro-de-alcantara-caceres"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Juan Miguel Bergua Burgués",
+   "variantes": [
+    "Juan Miguel Bergua Burgués",
+    "Juan Migule Bergua"
+   ],
+   "hospitales": [
+    "hospital-san-pedro-de-alcantara-caceres"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Albert Oriol Rocafiguera",
+   "variantes": [
+    "Albert Oriol Rocafiguera",
+    "Alberto Oriol Rocafiguera"
+   ],
+   "hospitales": [
+    "hospital-universitari-germans-trias-i-pujol-de-badalona-badalona"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Antinio García Guiñon",
+   "variantes": [
+    "Antinio García Guiñon",
+    "Antoni García Guiñon"
+   ],
+   "hospitales": [
+    "hospital-universitari-arnau-de-vilanova-de-la-gerencia-territorial-de-"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Antinio García Guiñon",
+   "variantes": [
+    "Antinio García Guiñon",
+    "Antonio García Guiñón"
+   ],
+   "hospitales": [
+    "hospital-universitari-arnau-de-vilanova-de-la-gerencia-territorial-de-"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Antoni García Guiñon",
+   "variantes": [
+    "Antoni García Guiñon",
+    "Antonio García Guiñón"
+   ],
+   "hospitales": [
+    "hospital-universitari-arnau-de-vilanova-de-la-gerencia-territorial-de-"
+   ]
+  },
+  {
+   "tipo": "duplicado",
+   "canonico": "Antonio Molinés Honrubia",
+   "variantes": [
+    "Antonio Molinés Honrubia",
+    "Antono Molinés"
+   ],
+   "hospitales": [
+    "complejo-hospitalario-universitario-insular-materno-infantil-las-palma"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+datos/raw/
+datos/raw_ctis/
+datos/raw_ctgov/
+datos/ensayos.json
+datos/busqueda.json
+*.bak
+__pycache__/
+*.xlsx
+~$*

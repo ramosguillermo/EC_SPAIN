@@ -52,6 +52,8 @@
       if (EC.soloPorGenerico(e, p.enf)) out.rev.push("El registro indica la enfermedad de forma general: comprueba en los criterios que incluye la tuya.");
     }
     if (e.seguimiento && !p.seg) return null;
+    var nr = !!(e.reclutamiento && e.reclutamiento.estado === "no_recluta"), es = EC.estado();
+    if (nr ? !es.nrec : !es.rec) return null;
     // edad
     if (p.edad != null) {
       var mn = anios(el0.edad_min), mx = anios(el0.edad_max);
@@ -147,10 +149,63 @@
     COMORB.forEach(function (c) { var l = el("label"), i = document.createElement("input"); i.type = "checkbox"; i.value = c[0]; l.appendChild(i); l.appendChild(document.createTextNode(c[1])); g.appendChild(l); });
     fs.appendChild(g); var w = el("label", "ancho"); w.style.color = "inherit"; w.appendChild(fs); form.appendChild(w);
     in_.appendChild(form);
+    EC.chipsRec(in_, pintar);
     in_.appendChild(el("div", "res"));
     cont.appendChild(in_);
     cont.addEventListener("input", pintar); cont.addEventListener("change", pintar);
     listo = true; pintar();
   }
+  // ---- Lista de comprobación de un ensayo: criterio a criterio ----
+  var memo = {};
+  EC.checklist = function (e) {
+    var box = document.getElementById("chk"); box.textContent = ""; box.hidden = false;
+    var est = memo[e.identificador] = memo[e.identificador] || {};
+    var cr = e.criterios || {}, caja = el("div", "caja ancha"); box.appendChild(caja);
+    var x = el("button", "icono", "×"); x.type = "button"; x.setAttribute("aria-label", "Cerrar"); x.addEventListener("click", cerrar); caja.appendChild(x);
+    caja.appendChild(el("h2", null, (e.nombre ? e.nombre + " · " : "") + "criterios"));
+    caja.appendChild(el("p", "mut", EC.corto(EC.tituloEnsayo(e), 160)));
+    var resumen = el("div", "chk-res"); caja.appendChild(resumen);
+    var filas = [];
+    function lista(titulo, arr, tipo) {
+      if (!arr || !arr.length) return;
+      caja.appendChild(el("h3", null, titulo));
+      caja.appendChild(el("p", "mut", tipo === "inc" ? "Marca «Sí» si el paciente lo cumple." : "Marca «Sí» si el paciente presenta esta circunstancia (excluye)."));
+      arr.forEach(function (l, i) {
+        if (l.indexOf("§ ") === 0) { caja.appendChild(el("h4", "enc", l.slice(2))); return; }
+        var k = tipo + i, row = el("div", "fila-c");
+        row.appendChild(el("p", null, l));
+        var op = el("div", "ops");
+        [["s", "Sí"], ["n", "No"], ["?", "No sé"]].forEach(function (o) {
+          var lb = el("label"), r = document.createElement("input"); r.type = "radio"; r.name = e.identificador + k; r.value = o[0];
+          if ((est[k] || "?") === o[0]) r.checked = true;
+          r.addEventListener("change", function () { est[k] = o[0]; resumir(); });
+          lb.appendChild(r); lb.appendChild(document.createTextNode(" " + o[1])); op.appendChild(lb);
+        });
+        row.appendChild(op); caja.appendChild(row); filas.push({ k: k, tipo: tipo, row: row });
+      });
+    }
+    lista("Criterios de inclusión", cr.inc, "inc");
+    lista("Criterios de exclusión", cr.exc, "exc");
+    function resumir() {
+      var fallos = 0, dudas = 0, ok = 0;
+      filas.forEach(function (f) {
+        var v = est[f.k] || "?", mal = (f.tipo === "inc" && v === "n") || (f.tipo === "exc" && v === "s");
+        f.row.classList.toggle("mal", mal); f.row.classList.toggle("bien", !mal && v !== "?");
+        if (mal) fallos++; else if (v === "?") dudas++; else ok++;
+      });
+      resumen.className = "chk-res " + (fallos ? "no" : dudas ? "rev" : "si");
+      resumen.textContent = fallos ? "No cumple: " + fallos + " criterio(s) incumplido(s) (" + ok + " correctos, " + dudas + " sin responder)."
+        : dudas ? "Sin incumplimientos hasta ahora. Faltan " + dudas + " criterio(s) por responder (" + ok + " correctos)."
+        : "Cumple todos los criterios marcados. La elegibilidad final la decide el equipo investigador.";
+    }
+    var rs = el("button", "btn claro", "Reiniciar respuestas"); rs.type = "button";
+    rs.addEventListener("click", function () { memo[e.identificador] = {}; EC.checklist(e); }); caja.appendChild(rs);
+    resumir();
+    function cerrar() { box.hidden = true; document.removeEventListener("keydown", esc); }
+    function esc(ev) { if (ev.key === "Escape") cerrar(); }
+    document.addEventListener("keydown", esc);
+    box.onclick = function (ev) { if (ev.target === box) cerrar(); };
+    caja.scrollTop = 0;
+  };
   EC.cand = { mostrar: function () { if (!listo) montar(); } };
 })();

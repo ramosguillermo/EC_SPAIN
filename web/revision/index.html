@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revisión · Ensayos clínicos hematología</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--bd:#d6dee8;--ac:#1f6feb;--ok:#1a7f37;--tx:#1b2430;--mut:#667}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.45 system-ui,Segoe UI,sans-serif;background:var(--bg);color:var(--tx)}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--bd);padding:10px 16px}
+header h1{font-size:17px;margin:0 0 6px}
+.barra{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+select,button,input,textarea{font:inherit}
+button{border:1px solid var(--bd);background:#fff;border-radius:8px;padding:6px 11px;cursor:pointer}
+button:hover{border-color:var(--ac)}
+button.p{background:var(--ac);color:#fff;border-color:var(--ac)}
+button.sel{background:var(--ok);color:#fff;border-color:var(--ok)}
+main{max-width:900px;margin:0 auto;padding:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.card.hecho{opacity:.55}
+.card h3{margin:0 0 4px;font-size:15px}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;background:#e8eef7;color:#345;margin-right:6px}
+.tag.alta{background:#fde2e0;color:#8a1c14}
+.det,.prop{color:var(--mut);font-size:13px;margin:3px 0}
+.ops{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.enl a{font-size:13px;margin-right:12px}
+.extra{margin-top:8px}
+.extra input,.extra textarea{width:100%;padding:6px;border:1px solid var(--bd);border-radius:6px}
+.ents{display:flex;flex-wrap:wrap;gap:4px;max-height:160px;overflow:auto;border:1px solid var(--bd);border-radius:6px;padding:6px}
+.ents label{font-size:13px;background:#f1f4f8;border-radius:6px;padding:2px 6px}
+.vacio{text-align:center;color:var(--mut);padding:40px}
+details{margin:8px 0;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Revisión de datos <span id="gen" style="font-weight:400;color:#667;font-size:13px"></span></h1>
+  <div class="barra">
+    <select id="ftipo"></select>
+    <select id="fprio"><option value="">Toda prioridad</option><option value="alta">Alta</option><option value="media">Media</option><option value="baja">Baja</option></select>
+    <label><input type="checkbox" id="fhechos"> mostrar ya decididos</label>
+    <span id="cont" style="color:#667"></span>
+    <button id="bulk">Aceptar todo lo visible (propuesta)</button>
+    <button id="desc" class="p">Descargar decisiones.json</button>
+  </div>
+  <details><summary>Cómo se guarda</summary>
+    <p>Tus decisiones se guardan en este navegador. Cuando termines (o cuando quieras) pulsa <b>Descargar decisiones.json</b>, súbelo a tu repositorio de GitHub en <code>revision/decisiones.json</code> (sustituyendo el anterior) y lanza el flujo «Actualizar». Los elementos ya decididos desaparecen solos; si los datos cambian, vuelven a salir.</p>
+    <p>«Aceptar todo lo visible» marca como correcto (sin cambiar nada) los elementos con opción «Correcto», «Visto» o «Son distintos» según el filtro activo; úsalo con un filtro de tipo.</p>
+  </details>
+</header>
+<main id="lista"></main>
+<script>
+const LS = "ec_revision_decisiones_v1";
+let P = {items:[], entidades:[]}, base = {}, loc = {};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const NOMBRES = {nuevo:"Ensayo nuevo",dudoso_hematologia:"¿Es hematología?",clasificacion:"Enfermedades",nombre:"Nombre del estudio",reclutamiento:"Reclutamiento",sin_criterios:"Sin criterios",promotor_tipo:"Tipo de promotor",promotor_union:"Unir promotores",investigador:"Investigadores",hospital:"Hospital"};
+const OK_ACC = ["ok","visto","distintos"];
+
+async function cargar(){
+  try { loc = JSON.parse(localStorage.getItem(LS) || "{}"); } catch(e){ loc = {}; }
+  P = await (await fetch("pendientes.json?"+Date.now())).json();
+  try { const r = await fetch("decisiones.json?"+Date.now()); if(r.ok) for(const d of (await r.json()).decisiones||[]) base[d.key] = d; } catch(e){}
+  $("#gen").textContent = "· datos generados: " + (P.generado||"");
+  const tipos = [...new Set(P.items.map(i=>i.tipo))];
+  $("#ftipo").innerHTML = '<option value="">Todos los tipos</option>' + tipos.map(t=>`<option value="${t}">${NOMBRES[t]||t} (${P.items.filter(i=>i.tipo==t).length})</option>`).join("");
+  pinta();
+}
+function guarda(){ try{ localStorage.setItem(LS, JSON.stringify(loc)); }catch(e){} }
+function decidido(i){ const d = loc[i.key]; return d && d.hash === i.hash; }
+
+function pinta(){
+  const ft=$("#ftipo").value, fp=$("#fprio").value, fh=$("#fhechos").checked;
+  const orden={alta:0,media:1,baja:2};
+  const v = P.items.filter(i => (!ft||i.tipo==ft) && (!fp||i.prioridad==fp) && (fh || !decidido(i)))
+    .sort((a,b)=>(orden[a.prioridad]??3)-(orden[b.prioridad]??3));
+  const hechos = P.items.filter(decidido).length;
+  $("#cont").textContent = `${v.length} visibles · ${hechos} decididos en este navegador · ${P.items.length} en total`;
+  const L = $("#lista");
+  if(!v.length){ L.innerHTML = '<div class="vacio">Nada pendiente con este filtro 🎉</div>'; return; }
+  L.innerHTML = "";
+  v.slice(0,150).forEach(i => L.appendChild(tarjeta(i)));
+  if(v.length>150){ const p=document.createElement("div"); p.className="vacio"; p.textContent=`Se muestran 150 de ${v.length}. Decide estos y se cargarán más.`; L.appendChild(p); }
+}
+
+function tarjeta(i){
+  const d = loc[i.key], hecho = d && d.hash===i.hash;
+  const c = document.createElement("div"); c.className = "card" + (hecho?" hecho":"");
+  c.innerHTML = `<div><span class="tag ${i.prioridad=="alta"?"alta":""}">${esc(NOMBRES[i.tipo]||i.tipo)}</span><span class="tag">${esc(i.prioridad||"")}</span></div>
+    <h3>${esc(i.titulo)}</h3>
+    ${i.detalle?`<div class="det">${esc(i.detalle)}</div>`:""}
+    ${i.propuesta?`<div class="prop">${esc(i.propuesta)}</div>`:""}
+    <div class="enl">${(i.enlaces||[]).map(e=>`<a href="${esc(e.u)}" target="_blank" rel="noopener">${esc(e.t)}</a>`).join("")}</div>
+    <div class="ops"></div><div class="extra"></div>`;
+  const ops = c.querySelector(".ops"), ex = c.querySelector(".extra");
+  (i.opciones||[]).forEach(o => {
+    const b = document.createElement("button"); b.textContent = o.label;
+    if(hecho && d.accion===o.id) b.classList.add("sel");
+    b.onclick = () => {
+      if(o.input){ montaInput(i,o,ex); return; }
+      fija(i,o.id,"");
+    };
+    ops.appendChild(b);
+  });
+  if(hecho){ const u=document.createElement("button"); u.textContent="Deshacer"; u.onclick=()=>{delete loc[i.key];guarda();pinta();}; ops.appendChild(u); }
+  return c;
+}
+
+function montaInput(i,o,ex){
+  if(o.input==="entidades"){
+    ex.innerHTML = `<div class="ents">${P.entidades.map(e=>`<label><input type="checkbox" value="${esc(e.id)}"> ${esc(e.n)}</label>`).join("")}</div><button class="p" style="margin-top:6px">Guardar</button>`;
+    ex.querySelector("button").onclick = () => {
+      const v=[...ex.querySelectorAll("input:checked")].map(x=>x.value);
+      if(!v.length){ alert("Marca al menos una enfermedad."); return; }
+      fija(i,o.id,v);
+    };
+  } else {
+    const ph = o.input==="coordenadas" ? "lat, lon  (p. ej. 40.4168, -3.7038)" : "Nuevo valor";
+    ex.innerHTML = `<input placeholder="${ph}"><button class="p" style="margin-top:6px">Guardar</button>`;
+    ex.querySelector("button").onclick = () => { const v=ex.querySelector("input").value.trim(); if(!v) return; fija(i,o.id,v); };
+  }
+}
+
+function fija(i,accion,valor){
+  loc[i.key] = {key:i.key, hash:i.hash, tipo:i.tipo, accion, valor, ref:i.ref};
+  guarda(); pinta();
+}
+
+$("#bulk").onclick = () => {
+  const ft=$("#ftipo").value, fp=$("#fprio").value;
+  const cand = P.items.filter(i => (!ft||i.tipo==ft) && (!fp||i.prioridad==fp) && !decidido(i));
+  if(!ft && !confirm("No has filtrado por tipo. ¿Aceptar la propuesta de TODOS los elementos visibles?")) return;
+  let n=0;
+  cand.forEach(i => {
+    const o = (i.opciones||[]).find(o => OK_ACC.includes(o.id));
+    if(o){ loc[i.key] = {key:i.key, hash:i.hash, tipo:i.tipo, accion:o.id, valor:"", ref:i.ref}; n++; }
+  });
+  guarda(); pinta(); alert(n+" elementos marcados. Los que no tienen opción de «correcto» siguen pendientes.");
+};
+
+$("#desc").onclick = () => {
+  const todo = {...base, ...loc};
+  const vigentes = {};
+  P.items.forEach(i => { const d=todo[i.key]; if(d && d.hash===i.hash) vigentes[i.key]=d; });
+  // se conservan también las decisiones antiguas cuyo elemento ya no aparece (ya aplicadas)
+  const ids = new Set(P.items.map(i=>i.key));
+  Object.values(todo).forEach(d => { if(!ids.has(d.key)) vigentes[d.key]=d; });
+  const blob = new Blob([JSON.stringify({decisiones:Object.values(vigentes)},null,1)],{type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="decisiones.json"; a.click();
+};
+["ftipo","fprio","fhechos"].forEach(id => $("#"+id).onchange = pinta);
+cargar();
+</script>
+</body>
+</html>

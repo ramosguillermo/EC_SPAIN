@@ -1,0 +1,217 @@
+Centros abiertos: 153 nombres normalizados -> 119 hospitales | puntos en el mapa: 162 -> 113
+
+Fusiones por nombres DISTINTOS (revisa que sean el mismo hospital):
+  * Hospital Infantil Universitario Niño Jesus (Madrid)
+       - HOSPITAL INFANTIL UNIVERSITARIO NIÑO JESUS [28007 Madrid]
+       - Hospital Infantil Universitario Nino Jesus [28007 Madrid]
+       - Hospital Infantil Universitario Nino Jesus [28009 Madrid]
+       - Hospital Nino Jesus [28009 Madrid]
+  * Hospital Universitari Vall d'Hebron (Barcelona)
+       - HOSPITAL UNIVERSITARI VALL D'HEBRON [08035 Barcelona]
+       - Hospital Universitari Vall D Hebron [08035 Barcelona]
+       - Hospital Universitari Vall D'Hebron [08035 Barcelona]
+       - Hospital Universitari Vall d'Hebron [08035 Barcelona]
+       - Hospital Universitari Vall d'Hebron [8035 BARCELONA]
+       - Hospital Universitari Vall dHebron [08035 Barcelona]
+  * Hospital de Sant Joan de Déu (Esplugues de Llobregat)
+       - HOSPITAL DE SANT JOAN DE DEU. [08950 Esplugues de Llobregat]
+       - HOSPITAL DE SANT JOAN DE DÉU. [08950 Esplugues de Llobregat]
+       - Hospital Sant Joan De Deu Barcelona [08950 Esplugues De Llobregat]
+       - Hospital de Sant Joan de Déu [08950 Esplugues de Llobregat]
+       - Sant Joan De Deu Barcelona Hospital [08950 Esplugues De Llobregat]
+  * Hospital Universitario de Salamanca (Salamanca)
+       - COMPLEJO ASISTENCIAL UNIVERSITARIO DE SALAMANCA [37007 SALAMANCA]
+       - Complejo Asistencial Universitario De Salamanca [37005 Salamanca]
+       - Complejo Asistencial Universitario De Salamanca [37007 Salamanca]
+       - HOSPITAL UNIVERSITARIO DE SALAMANCA [37007 Salamanca]
+       - Hospital Universitario De Salamanca [37007 Salamanca]
+  * Hospital Universitario Miguel Servet (Zaragoza)
+       - HOSPITAL UNIVERSITARIO MIGUEL SERVET [50009 Zaragoza]
+       - Hospital Universitario Miguel Servet [50009 Zaragoza]
+       - Hospital Unviersitario Miguel Servet [50009 Zaragoza]
+  * Institut Catala d'Oncologia- l'Hospitalet de Llobregat (L'hospitalet de Llobregat)
+       - Institut Catala D'oncologia [08908 Hospitalet de Llobregat, L']
+       - Institut Catala D'oncologia [08908 L'hospitalet De Llobregat]
+       - Institut Catala d'Oncologia- L'Hospitalet de Llobregat [08908 BARCELONA]
+  * Hospital Universitario Virgen del Rocío (Sevilla)
+       - HOSPITAL UNIVERSITARIO VIRGEN DEL ROCIO [41013 Sevilla]
+       - HOSPITAL UNIVERSITARIO VIRGEN DEL ROCÍO [41013 Sevilla]
+       - HOSPITAL VIRGEN DEL ROCÍO [41013 SEVILLA]
+       - HOSPITAL VIRGEN DEL ROCÍO [41013 Sevilla]
+       - Hospital Universitario Virgen Del Rocio [41013 Sevilla]
+       - Hospital Universitario Virgen del Rocio [41013 Sevilla]
+       - University Hospital Virgen Del Rocio S.L. [41013 Sevilla]
+  * Hospital Materno-Infantil de Málaga (Hospital Regional Universitario de Málaga) (Málaga)
+       - COMPLEJO HOSPITALARIO REGIONAL DE MÁLAGA [29010 Málaga]
+       - HOSPITAL UNIVERSITARIO REGIONAL DE MALAGA [29010 Málaga]
+       - HOSPITAL UNIVERSITARIO REGIONAL DE MÁLAGA [29010 Málaga]
+       - Hospital Materno-Infantil de Málaga (Hospital Regional Universitario de Málaga) [29011 Malaga]
+       - Hospital Universitario Regional De Malaga [29010 Malaga]
+       - Hospital Universitario Regional De Malaga [29010 Málaga]
+  * Hospital Clínico Universitario Virgen de la Arrixaca (Murcia)
+       - HOSPITAL CLINICO UNIVERSITARIO VIRGEN DE LA ARRIXACA [30120 Murcia]
+       - HOSPITAL CLÍNICO UNIVERSITARIO VIRGEN DE LA ARRIXACA [30120 Murcia]
+       - Hospital Clínico Universitario Virgen De La Arrixaca [30120 Murcia]
+       - University Clinical Hospital Virgen De La Arrixaca [30120 Murcia]
+  * Hospital General Universitario Gregorio Marañón (Madrid)
+       - COMPLEJO HOSPITALARIO GREGORIO MARAÑÓN [28009 Madrid]
+       - HOSPITAL GENERAL UNIVERSITARIO GREGORIO MARAÑON [28009 Madrid]
+       - HOSPITAL GENERAL UNIVERSITARIO GREGORIO MARAÑÓN [28009 Madrid]
+       - Hospital General Universitario Gregorio Maranon [28007 Madrid]
+       - Hospital General Universitario Gregorio Maranon [28009 Madrid]
+  * University Hospital Son Espases (Palma)
+       - COMPLEJO ASISTENCIAL SON ESPASES (*) [07120 Palma]
+       - HOSPITAL UNIVERSITARI SON ESPASES [07120 Palma de Mallorca]
+       - HOSPITAL UNIVERSITARI SON ESPASES [07120 Palma]
+       - Hospital Universitari Son Espases [07120 Palma]
+       - University Hospital Son Espases [07120 Palma]
+  * Hospital Universitario La Paz (Madrid)
+       - Complejo Hospitalario La Paz [28046 Madrid]
+       - HOSPITAL UNIVERSITARIO LA PAZ [28046 Madrid]
+       - Hospital Universitario La Paz [28046 Madrid]
+  * Hospital Universitario Virgen de la Macarena (Sevilla)
+       - HOSPITAL UNIVERSITARIO VIRGEN MACARENA [41009 Sevilla]
+       - HOSPITAL VIRGEN MACARENA [41071 Sevilla]
+       - Hospital Universitario Virgen De La Macarena [41009 Sevilla]
+  * Hospital Germans Trias i Pujol (Badalona)
+       - HOSPITAL UNIVERSITARI GERMANS TRIAS I PUJOL DE BADALONA [08916 Badalona]
+       - Hospital Germans Trias I Pujol [08916 Badalona]
+  * Hospital Ramón y Cajal (Madrid)
+       - HOSPITAL RAMÓN Y CAJAL [28034 MADRID]
+       - HOSPITAL RAMÓN Y CAJAL [28034 Madrid]
+       - HOSPITAL UNIVERSITARIO RAMON Y CAJAL [28034 Madrid]
+       - Hospital Universitario Ramon Y Cajal [28034 Madrid]
+       - Hospital Universitario Ramon Y Cajal [28049 Madrid]
+  * Hospital Universitario de Toledo (Toledo)
+       - Complejo Hospitalario De Toledo [45004 Toledo]
+       - Hospital Universitario De Toledo [45007 Toledo]
+  * Hospital Universitario de Gran Canaria Dr. Negrin (Las Palmas de Gran Canaria)
+       - Complejo Hospitalario Universitario De Gran Canaria Dr. Negrin [35012 Palmas de Gran Canaria, Las]
+       - El Hospital Universitario De Gran Canaria Dr. Negrin [35010 Las Palmas De Gran Canaria]
+       - Hospital Universitario De Gran Canaria Dr. Negrin [35010 Las Palmas De Gran Canaria]
+  * Hospital General Universitario Morales Meseguer (Murcia)
+       - HOSPITAL G. UNIVERSITARIO J.M. MORALES MESEGUER [30008 Murcia]
+       - HOSPITAL GENERAL UNIVERSITARIO J.M. MORALES MESEGUER [30008 Murcia]
+       - Hospital G. Universitario J.M. Morales Meseguer [30008 Murcia]
+       - Hospital General Universitario Morales Meseguer [30008 Murcia]
+  * Hospital Universitario Infanta Leonor (Madrid)
+       - COMPLEJO HOSPITALARIO UNIVERSITARIO INFANTA LEONOR [28031 Madrid]
+       - HOSPITAL UNIVERSITARIO INFANTA LEONOR [28031 Madrid]
+       - Hospital Universitario Infanta Leonor [28031 Madrid]
+  * Hospital Universitario Virgen de la Victoria (Málaga)
+       - HOSPITAL UNIVERSITARIO VIRGEN DE LA VICTORIA [29010 Málaga]
+       - HOSPITAL VIRGEN DE LA VICTORIA [29010 Málaga]
+       - Hospital Universitario Virgen De La Victoria [29010 Malaga]
+       - Hospital Universitario Virgen De La Victoria [29010 Málaga]
+  * Hospital Clínic de Barcelona (Barcelona)
+       - HOSPITAL CLINIC DE BARCELONA [08036 Barcelona]
+       - HOSPITAL CLÍNIC DE BARCELONA [08036 Barcelona]
+       - HOSPITAL CLÍNIC I PROVINCIAL DE BARCELONA [08036 BARCELONA]
+       - Hospital Clinic De Barcelona [08028 Barcelona]
+       - Hospital Clinic De Barcelona [08036 Barcelona]
+       - Hospital Clínic Barcelona [08036 Barcelona]
+  * Complexo Hospitalario Universitario A Coruña (Coruña, A)
+       - COMPLEXO HOSPITALARIO UNIVERSITARIO A CORUÑA [15006 A Coruna]
+       - COMPLEXO HOSPITALARIO UNIVERSITARIO A CORUÑA [15006 Coruña, A]
+       - Complejo Hospitalario Universitario a Coruña [15006 A Coruña]
+       - Complexo Hospitalario Universitario A Coruna [15006 A Coruna]
+       - Complexo Hospitalario Universitario A Coruña [15006 Coruña, A]
+  * Hospital Universitario de Leon (León)
+       - HOSPITAL DE LEON (COMPLEJO ASISTENCIAL UNIVERSITARIO DE LEON) [24080 León]
+       - Hospital Universitario De Leon [24071 Leon]
+  * Hospital Universitari Mútua Terrassa (Terrassa)
+       - Fundacio Assistencial De Mutua De Terrassa Fpc [08221 Terrassa]
+       - Hospital Universitari Mutua Terrassa [08221 Terrassa]
+       - Hospital Universitari Mútua Terrassa [08221 Terrassa]
+  * Hospital Universitario Puerta de Hierro de Majadahonda (Majadahonda)
+       - HOSPITAL UNIVERSITARIO PUERTA DE HIERRO MAJADAHONDA [28036 Majadahonda]
+       - HOSPITAL UNIVERSITARIO PUERTA DE HIERRO MAJADAHONDA [28222 Majadahonda]
+       - Hospital Universitario Puerta De Hierro De Majadahonda [28222 Majadahonda]
+  * Hospital Md Anderson Cáncer Center Madrid (Madrid)
+       - HOSPITAL MD ANDERSON CANCER CENTER MADRID [28033 Madrid]
+       - Hospital Md Anderson Cáncer Center Madrid [28033 Madrid]
+       - MD Anderson Cancer Center [28033 Madrid]
+  * Complejo Hospitalario Universitario de Ourense (Ourense)
+       - Complejo Hospitalario Universitario De Ourense [32005 Ourense]
+       - Complexo Hospitalario Universitario De Ourense [32005 Ourense]
+  * Complejo Hospitalario Regional Reina Sofía (Córdoba)
+       - COMPLEJO HOSPITALARIO REGIONAL REINA SOFÍA [14004 Córdoba]
+       - Hospital General Universitario Reina Sofia [14004 Cordoba]
+       - Hospital Universitario Reina Sofia [14004 Cordoba]
+  * Complejo Hospitalario de Jaén (Jaén)
+       - COMPLEJO HOSPITALARIO DE JAÉN [23007 Jaén]
+       - Hospital Universitario De Jaen [23007 Jaen]
+  * Hospital General Universitario de Albacete (Albacete)
+       - COMPLEJO HOSPITALARIO UNIVERSITARIO DE ALBACETE [02006 Albacete]
+       - Hospital General Universitario De Albacete [02006 Albacete]
+  * Hospital Clínico San Carlos (Madrid)
+       - HOSPITAL CLÍNICO SAN CARLOS [28040 Madrid]
+       - HOSPITAL UNIVERSITARIO CLINICO SAN CARLOS [28040 Madrid]
+       - Hospital Clinico San Carlos [28040 Madrid]
+  * Hospital Arnau de Vilanova de Valencia (València)
+       - Hospital Arnau De Vilanova De Valencia [46015 Valencia]
+       - Hospital Arnau De Vilanova [46015 València]
+  * Vall d'Hebron Institut de Recerca (Barcelona)
+       - Fir Huvh Fundacio Institut De Recerca Hospital Universitari Vall De Hebron [08035 Barcelona]
+       - Fundacio Hospital Universitari Vall DHebron Institut De Recerca [08035 Barcelona]
+       - Vall D'hebron Institut De Recerca [08035 Barcelona]
+  * Hospital Universitario de Cruces (Barakaldo)
+       - HOSPITAL UNIVERSITARIO CRUCES [48903 Barakaldo]
+       - HOSPITAL UNIVERSITARIO DE CRUCES [48903 Barakaldo]
+       - Hospital Universitario De Cruces [48903 Barakaldo]
+  * Hospital Universitari Arnau de Vilanova de la Gerencia Territorial de Lleida (Lleida)
+       - HOSPITAL UNIVERSITARI ARNAU DE VILANOVA DE LLEIDA. [25198 Lleida]
+       - Hospital Universitari Arnau De Vilanova De La Gerencia Territorial De Lleida [25196 Lleida]
+  * Consorcio Hospital General Universitario de Valencia (Valencia)
+       - Consorcio Hospital General Universitario De Valencia [46014 Valencia]
+       - Hospital General Universitario De Valencia [46014 Valencia]
+  * Hospital Geriátrico Virgen del Valle (Toledo)
+       - HOSPITAL GERIATRICO VIRGEN DEL VALLE [45004 Toledo]
+       - Hospital Geriátrico Virgen del Valle [45004 Toledo]
+       - Hospital Virgen Del Valle [45004 Toledo]
+
+Hospitales a >2 km de los demás de su código postal (coordenada sospechosa):
+  *  5.9 km | hospital-universitari-vall-d-hebron-barcelona | fuente=reglas
+  *  4.7 km | hospital-materno-infantil-de-malaga-hospital-regional-universitario-de | fuente=reglas
+  *  5.8 km | centre-sociosanitari-sant-jordi-de-la-vall-d-hebron-barcelona | fuente=reglas
+  *  4.7 km | hospital-universitario-virgen-de-la-victoria-malaga | fuente=reglas
+  *  3.5 km | hospital-universitario-donostia-donostia-unibertsitate-ospitalea-donos | fuente=reglas
+  *  5.8 km | vall-d-hebron-institut-de-recerca-barcelona | fuente=reglas
+  *  3.0 km | university-hospital-of-canary-islands-san-cristobal-de-la-laguna | fuente=reglas
+  *  3.5 km | hospital-universitario-donostia-donostia-san-sebastian | fuente=reglas
+  *  3.0 km | hospital-universitario-de-canarias-san-cristobal-de-la-laguna | fuente=reglas
+  *  5.8 km | vall-d-hebron-institute-of-oncology-barcelona | fuente=reglas
+
+Hospitales cuyas variantes discrepan más de 150 m (coordenada dudosa):
+  *  7405 m | complejo-hospitalario-universitario-insular-materno-infantil-las-palma | fuente=reglas
+  *  7260 m | hospital-clinico-universitario-virgen-de-la-arrixaca-murcia | fuente=reglas
+  *  6431 m | hospital-universitario-de-toledo-toledo | fuente=reglas
+  *  4135 m | hospital-md-anderson-cancer-center-madrid-madrid | fuente=reglas
+  *  3157 m | hospital-universitario-virgen-del-rocio-sevilla | fuente=reglas
+  *  2853 m | institut-catala-d-oncologia-badalona | fuente=reglas
+  *  2844 m | institut-catala-d-oncologia-l-hospitalet-de-llobregat-l-hospitalet-de- | fuente=reglas
+  *  2700 m | hospital-costa-del-sol-marbella | fuente=reglas
+  *  2372 m | hospital-universitario-puerta-de-hierro-de-majadahonda-majadahonda | fuente=reglas
+  *  2024 m | complejo-hospitalario-universitario-de-ourense-ourense | fuente=reglas
+  *  2017 m | hospital-universitario-virgen-de-la-macarena-sevilla | fuente=reglas
+  *  1660 m | institut-catala-d-oncologia-girona | fuente=reglas
+  *  1648 m | complexo-hospitalario-universitario-de-vigo-vigo | fuente=reglas
+  *  1571 m | hospital-germans-trias-i-pujol-badalona | fuente=reglas
+  *  1401 m | consorcio-hospital-general-universitario-de-valencia-valencia | fuente=reglas
+  *  1322 m | hospital-universitario-de-gran-canaria-dr-negrin-las-palmas-de-gran-ca | fuente=reglas
+  *  1033 m | hospital-universitario-de-salamanca-salamanca | fuente=reglas
+  *  1014 m | hospital-universitario-basurto-bilbao | fuente=reglas
+  *   811 m | university-hospital-son-espases-palma | fuente=reglas
+  *   693 m | hospital-general-universitario-morales-meseguer-murcia | fuente=reglas
+  *   617 m | hospital-general-universitario-gregorio-maranon-madrid | fuente=reglas
+  *   592 m | hospital-universitario-y-politecnico-la-fe-valencia | fuente=reglas
+  *   538 m | hospital-universitario-marques-de-valdecilla-santander | fuente=reglas
+  *   462 m | hospital-materno-infantil-de-malaga-hospital-regional-universitario-de | fuente=reglas
+  *   435 m | complexo-hospitalario-universitario-de-santiago-santiago-de-compostela | fuente=reglas
+  *   409 m | hospital-universitario-miguel-servet-zaragoza | fuente=reglas
+  *   397 m | hospital-universitario-virgen-de-valme-sevilla | fuente=reglas
+  *   357 m | complejo-hospitalario-regional-reina-sofia-cordoba | fuente=reglas
+  *   315 m | clinica-universidad-de-navarra-madrid | fuente=reglas
+  *   303 m | hospital-ramon-y-cajal-madrid | fuente=reglas
+  *   255 m | hospital-universitario-central-de-asturias-oviedo | fuente=reglas
+  *   243 m | hospital-general-universitario-de-alicante-alicante-alacant | fuente=reglas
